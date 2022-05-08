@@ -1,0 +1,1192 @@
+{
+  "Escape": {
+    "eng": {
+      "caseDown": "esc",
+      "caseUp": "esc",
+      "caps": "esc",
+      "shiftCaps": "esc"
+    },
+    "rus": {
+      "caseDown": "esc",
+      "caseUp": "esc",
+      "caps": "esc",
+      "shiftCaps": "esc"
+    }
+  },
+  "F1": {
+    "eng": {
+      "caseDown": "f1",
+      "caseUp": "f1",
+      "caps": "f1",
+      "shiftCaps": "f1"
+    },
+    "rus": {
+      "caseDown": "f1",
+      "caseUp": "f1",
+      "caps": "f1",
+      "shiftCaps": "f1"
+    }
+  },
+  "F2": {
+    "eng": {
+      "caseDown": "f2",
+      "caseUp": "f2",
+      "caps": "f2",
+      "shiftCaps": "f2"
+    },
+    "rus": {
+      "caseDown": "f2",
+      "caseUp": "f2",
+      "caps": "f2",
+      "shiftCaps": "f2"
+    }
+  },
+  "F3": {
+    "eng": {
+      "caseDown": "f3",
+      "caseUp": "f3",
+      "caps": "f3",
+      "shiftCaps": "f3"
+    },
+    "rus": {
+      "caseDown": "f3",
+      "caseUp": "f3",
+      "caps": "f3",
+      "shiftCaps": "f3"
+    }
+  },
+  "F4": {
+    "eng": {
+      "caseDown": "f4",
+      "caseUp": "f4",
+      "caps": "f4",
+      "shiftCaps": "f4"
+    },
+    "rus": {
+      "caseDown": "f4",
+      "caseUp": "f4",
+      "caps": "f4",
+      "shiftCaps": "f4"
+    }
+  },
+  "F5": {
+    "eng": {
+      "caseDown": "f5",
+      "caseUp": "f5",
+      "caps": "f5",
+      "shiftCaps": "f5"
+    },
+    "rus": {
+      "caseDown": "f5",
+      "caseUp": "f5",
+      "caps": "f5",
+      "shiftCaps": "f5"
+    }
+  },
+  "F6": {
+    "eng": {
+      "caseDown": "f6",
+      "caseUp": "f6",
+      "caps": "f6",
+      "shiftCaps": "f6"
+    },
+    "rus": {
+      "caseDown": "f6",
+      "caseUp": "f6",
+      "caps": "f6",
+      "shiftCaps": "f6"
+    }
+  },
+  "F7": {
+    "eng": {
+      "caseDown": "f7",
+      "caseUp": "f7",
+      "caps": "f7",
+      "shiftCaps": "f7"
+    },
+    "rus": {
+      "caseDown": "f7",
+      "caseUp": "f7",
+      "caps": "f7",
+      "shiftCaps": "f7"
+    }
+  },
+  "F8": {
+    "eng": {
+      "caseDown": "f8",
+      "caseUp": "f8",
+      "caps": "f8",
+      "shiftCaps": "f8"
+    },
+    "rus": {
+      "caseDown": "f8",
+      "caseUp": "f8",
+      "caps": "f8",
+      "shiftCaps": "f8"
+    }
+  },
+  "F9": {
+    "eng": {
+      "caseDown": "f9",
+      "caseUp": "f9",
+      "caps": "f9",
+      "shiftCaps": "f9"
+    },
+    "rus": {
+      "caseDown": "f9",
+      "caseUp": "f9",
+      "caps": "f9",
+      "shiftCaps": "f9"
+    }
+  },
+  "F10": {
+    "eng": {
+      "caseDown": "f10",
+      "caseUp": "f10",
+      "caps": "f10",
+      "shiftCaps": "f10"
+    },
+    "rus": {
+      "caseDown": "f10",
+      "caseUp": "f10",
+      "caps": "f10",
+      "shiftCaps": "f10"
+    }
+  },
+  "F11": {
+    "eng": {
+      "caseDown": "f11",
+      "caseUp": "f11",
+      "caps": "f11",
+      "shiftCaps": "f11"
+    },
+    "rus": {
+      "caseDown": "f11",
+      "caseUp": "f11",
+      "caps": "f11",
+      "shiftCaps": "f11"
+    }
+  },
+  "F12": {
+    "eng": {
+      "caseDown": "f12",
+      "caseUp": "f12",
+      "caps": "f12",
+      "shiftCaps": "f12"
+    },
+    "rus": {
+      "caseDown": "f12",
+      "caseUp": "f12",
+      "caps": "f12",
+      "shiftCaps": "f12"
+    }
+  },
+  "insert": {
+    "eng": {
+      "caseDown": "insert",
+      "caseUp": "insert",
+      "caps": "insert",
+      "shiftCaps": "insert"
+    },
+    "rus": {
+      "caseDown": "insert",
+      "caseUp": "insert",
+      "caps": "insert",
+      "shiftCaps": "insert"
+    }
+  },
+  "delete": {
+    "eng": {
+      "caseDown": "delete",
+      "caseUp": "delete",
+      "caps": "delete",
+      "shiftCaps": "delete"
+    },
+    "rus": {
+      "caseDown": "delete",
+      "caseUp": "delete",
+      "caps": "delete",
+      "shiftCaps": "delete"
+    }
+  },
+  "Smile": {
+    "eng": {
+      "caseDown": "😅",
+      "caseUp": "🤑",
+      "caps": "🤑",
+      "shiftCaps": "😅"
+    },
+    "rus": {
+      "caseDown": "😴",
+      "caseUp": "😵",
+      "caps": "😵",
+      "shiftCaps": "😴"
+    }
+  },
+  "Backquote": {
+    "eng": {
+      "caseDown": "`",
+      "caseUp": "~",
+      "caps": "`",
+      "shiftCaps": "`"
+    },
+    "rus": {
+      "caseDown": "ё",
+      "caseUp": "Ё",
+      "caps": "ё",
+      "shiftCaps": "ё"
+    }
+  },
+  "Digit1": {
+    "eng": {
+      "caseDown": 1,
+      "caseUp": "!",
+      "caps": 1,
+      "shiftCaps": "!"
+    },
+    "rus": {
+      "caseDown": 1,
+      "caseUp": "!",
+      "caps": 1,
+      "shiftCaps": "!"
+    }
+  },
+  "Digit2": {
+    "eng": {
+      "caseDown": 2,
+      "caseUp": "@",
+      "caps": 2,
+      "shiftCaps": "@"
+    },
+    "rus": {
+      "caseDown": 2,
+      "caseUp": "&quot;",
+      "caps": 2,
+      "shiftCaps": "&quot;"
+    }
+  },
+  "Digit3": {
+    "eng": {
+      "caseDown": 3,
+      "caseUp": "#",
+      "caps": 3,
+      "shiftCaps": "#"
+    },
+    "rus": {
+      "caseDown": 3,
+      "caseUp": "№",
+      "caps": 3,
+      "shiftCaps": "№"
+    }
+  },
+  "Digit4": {
+    "eng": {
+      "caseDown": 4,
+      "caseUp": "$",
+      "caps": 4,
+      "shiftCaps": "$"
+    },
+    "rus": {
+      "caseDown": 4,
+      "caseUp": ";",
+      "caps": 4,
+      "shiftCaps": ";"
+    }
+  },
+  "Digit5": {
+    "eng": {
+      "caseDown": 5,
+      "caseUp": "%",
+      "caps": 5,
+      "shiftCaps": "%"
+    },
+    "rus": {
+      "caseDown": 5,
+      "caseUp": "%",
+      "caps": 5,
+      "shiftCaps": "%"
+    }
+  },
+  "Digit6": {
+    "eng": {
+      "caseDown": 6,
+      "caseUp": "^",
+      "caps": 6,
+      "shiftCaps": "^"
+    },
+    "rus": {
+      "caseDown": 6,
+      "caseUp": ":",
+      "caps": 6,
+      "shiftCaps": ":"
+    }
+  },
+  "Digit7": {
+    "eng": {
+      "caseDown": 7,
+      "caseUp": "&",
+      "caps": 7,
+      "shiftCaps": "&"
+    },
+    "rus": {
+      "caseDown": 7,
+      "caseUp": "?",
+      "caps": 7,
+      "shiftCaps": "?"
+    }
+  },
+  "Digit8": {
+    "eng": {
+      "caseDown": 8,
+      "caseUp": "*",
+      "caps": 8,
+      "shiftCaps": "*"
+    },
+    "rus": {
+      "caseDown": 8,
+      "caseUp": "*",
+      "caps": 8,
+      "shiftCaps": "*"
+    }
+  },
+  "Digit9": {
+    "eng": {
+      "caseDown": 9,
+      "caseUp": "(",
+      "caps": 9,
+      "shiftCaps": "("
+    },
+    "rus": {
+      "caseDown": 9,
+      "caseUp": "(",
+      "caps": 9,
+      "shiftCaps": "("
+    }
+  },
+  "Digit0": {
+    "eng": {
+      "caseDown": 0,
+      "caseUp": ")",
+      "caps": 0,
+      "shiftCaps": ")"
+    },
+    "rus": {
+      "caseDown": 0,
+      "caseUp": ")",
+      "caps": 0,
+      "shiftCaps": ")"
+    }
+  },
+  "minus": {
+    "eng": {
+      "caseDown": "-",
+      "caseUp": "_",
+      "caps": "-",
+      "shiftCaps": "_"
+    },
+    "rus": {
+      "caseDown": "-",
+      "caseUp": "_",
+      "caps": "-",
+      "shiftCaps": "_"
+    }
+  },
+  "plus": {
+    "eng": {
+      "caseDown": ":",
+      "caseUp": "+",
+      "caps": ":",
+      "shiftCaps": "+"
+    },
+    "rus": {
+      "caseDown": ":",
+      "caseUp": "+",
+      "caps": ":",
+      "shiftCaps": "+"
+    }
+  },
+  "Backspace": {
+    "eng": {
+      "caseDown": "backspace",
+      "caseUp": "backspace",
+      "caps": "backspace",
+      "shiftCaps": "backspace"
+    },
+    "rus": {
+      "caseDown": "backspace",
+      "caseUp": "backspace",
+      "caps": "backspace",
+      "shiftCaps": "backspace"
+    }
+  },
+  "Smile2": {
+    "eng": {
+      "caseDown": "🧠",
+      "caseUp": "🤯",
+      "caps": "🤯",
+      "shiftCaps": "🧠"
+    },
+    "rus": {
+      "caseDown": "🤣",
+      "caseUp": "😂",
+      "caps": "😂",
+      "shiftCaps": "🤣"
+    }
+  },
+  "Tab": {
+    "eng": {
+      "caseDown": "tab",
+      "caseUp": "tab",
+      "caps": "tab",
+      "shiftCaps": "tab"
+    },
+    "rus": {
+      "caseDown": "tab",
+      "caseUp": "tab",
+      "caps": "tab",
+      "shiftCaps": "tab"
+    }
+  },
+  "KeyQ": {
+    "eng": {
+      "caseDown": "q",
+      "caseUp": "Q",
+      "caps": "Q",
+      "shiftCaps": "q"
+    },
+    "rus": {
+      "caseDown": "й",
+      "caseUp": "Й",
+      "caps": "Й",
+      "shiftCaps": "й"
+    }
+  },
+  "KeyW": {
+    "eng": {
+      "caseDown": "w",
+      "caseUp": "W",
+      "caps": "W",
+      "shiftCaps": "w"
+    },
+    "rus": {
+      "caseDown": "ц",
+      "caseUp": "Ц",
+      "caps": "Ц",
+      "shiftCaps": "ц"
+    }
+  },
+  "KeyE": {
+    "eng": {
+      "caseDown": "e",
+      "caseUp": "E",
+      "caps": "E",
+      "shiftCaps": "e"
+    },
+    "rus": {
+      "caseDown": "у",
+      "caseUp": "У",
+      "caps": "У",
+      "shiftCaps": "у"
+    }
+  },
+  "KeyR": {
+    "eng": {
+      "caseDown": "r",
+      "caseUp": "R",
+      "caps": "R",
+      "shiftCaps": "r"
+    },
+    "rus": {
+      "caseDown": "к",
+      "caseUp": "К",
+      "caps": "К",
+      "shiftCaps": "к"
+    }
+  },
+  "KeyT": {
+    "eng": {
+      "caseDown": "t",
+      "caseUp": "T",
+      "caps": "T",
+      "shiftCaps": "t"
+    },
+    "rus": {
+      "caseDown": "е",
+      "caseUp": "Е",
+      "caps": "Е",
+      "shiftCaps": "е"
+    }
+  },
+  "KeyY": {
+    "eng": {
+      "caseDown": "y",
+      "caseUp": "Y",
+      "caps": "Y",
+      "shiftCaps": "y"
+    },
+    "rus": {
+      "caseDown": "н",
+      "caseUp": "Н",
+      "caps": "Н",
+      "shiftCaps": "н"
+    }
+  },
+  "KeyU": {
+    "eng": {
+      "caseDown": "u",
+      "caseUp": "U",
+      "caps": "U",
+      "shiftCaps": "u"
+    },
+    "rus": {
+      "caseDown": "г",
+      "caseUp": "Г",
+      "caps": "Г",
+      "shiftCaps": "г"
+    }
+  },
+  "KeyI": {
+    "eng": {
+      "caseDown": "i",
+      "caseUp": "I",
+      "caps": "I",
+      "shiftCaps": "i"
+    },
+    "rus": {
+      "caseDown": "ш",
+      "caseUp": "Ш",
+      "caps": "Ш",
+      "shiftCaps": "ш"
+    }
+  },
+  "KeyO": {
+    "eng": {
+      "caseDown": "o",
+      "caseUp": "O",
+      "caps": "O",
+      "shiftCaps": "o"
+    },
+    "rus": {
+      "caseDown": "щ",
+      "caseUp": "Щ",
+      "caps": "Щ",
+      "shiftCaps": "щ"
+    }
+  },
+  "KeyP": {
+    "eng": {
+      "caseDown": "p",
+      "caseUp": "P",
+      "caps": "P",
+      "shiftCaps": "p"
+    },
+    "rus": {
+      "caseDown": "з",
+      "caseUp": "З",
+      "caps": "З",
+      "shiftCaps": "з"
+    }
+  },
+  "BracketLeft": {
+    "eng": {
+      "caseDown": "[",
+      "caseUp": "{",
+      "caps": "[",
+      "shiftCaps": "{"
+    },
+    "rus": {
+      "caseDown": "х",
+      "caseUp": "Х",
+      "caps": "Х",
+      "shiftCaps": "х"
+    }
+  },
+  "BracketRight": {
+    "eng": {
+      "caseDown": "]",
+      "caseUp": "}",
+      "caps": "]",
+      "shiftCaps": "}"
+    },
+    "rus": {
+      "caseDown": "ъ",
+      "caseUp": "Ъ",
+      "caps": "Ъ",
+      "shiftCaps": "ъ"
+    }
+  },
+  "Backslash": {
+    "eng": {
+      "caseDown": "\\",
+      "caseUp": "|",
+      "caps": "\\",
+      "shiftCaps": "|"
+    },
+    "rus": {
+      "caseDown": "\\",
+      "caseUp": "/",
+      "caps": "\\",
+      "shiftCaps": "/"
+    }
+  },
+  "Smile3": {
+    "eng": {
+      "caseDown": "👽",
+      "caseUp": "👻",
+      "caps": "👻",
+      "shiftCaps": "👽"
+    },
+    "rus": {
+      "caseDown": "👽",
+      "caseUp": "👻",
+      "caps": "👻",
+      "shiftCaps": "👽"
+    }
+  },
+  "CapsLock": {
+    "eng": {
+      "caseDown": "caps lock",
+      "caseUp": "caps lock",
+      "caps": "caps lock",
+      "shiftCaps": "caps lock"
+    },
+    "rus": {
+      "caseDown": "caps lock",
+      "caseUp": "caps lock",
+      "caps": "caps lock",
+      "shiftCaps": "caps lock"
+    }
+  },
+  "KeyA": {
+    "eng": {
+      "caseDown": "a",
+      "caseUp": "A",
+      "caps": "A",
+      "shiftCaps": "a"
+    },
+    "rus": {
+      "caseDown": "ф",
+      "caseUp": "Ф",
+      "caps": "Ф",
+      "shiftCaps": "ф"
+    }
+  },
+  "KeyS": {
+    "eng": {
+      "caseDown": "s",
+      "caseUp": "S",
+      "caps": "S",
+      "shiftCaps": "s"
+    },
+    "rus": {
+      "caseDown": "ы",
+      "caseUp": "Ы",
+      "caps": "Ы",
+      "shiftCaps": "ы"
+    }
+  },
+  "KeyD": {
+    "eng": {
+      "caseDown": "d",
+      "caseUp": "D",
+      "caps": "D",
+      "shiftCaps": "d"
+    },
+    "rus": {
+      "caseDown": "в",
+      "caseUp": "В",
+      "caps": "В",
+      "shiftCaps": "в"
+    }
+  },
+  "KeyF": {
+    "eng": {
+      "caseDown": "f",
+      "caseUp": "F",
+      "caps": "F",
+      "shiftCaps": "f"
+    },
+    "rus": {
+      "caseDown": "а",
+      "caseUp": "А",
+      "caps": "А",
+      "shiftCaps": "а"
+    }
+  },
+  "KeyG": {
+    "eng": {
+      "caseDown": "g",
+      "caseUp": "G",
+      "caps": "G",
+      "shiftCaps": "g"
+    },
+    "rus": {
+      "caseDown": "п",
+      "caseUp": "П",
+      "caps": "П",
+      "shiftCaps": "п"
+    }
+  },
+  "KeyH": {
+    "eng": {
+      "caseDown": "h",
+      "caseUp": "H",
+      "caps": "H",
+      "shiftCaps": "h"
+    },
+    "rus": {
+      "caseDown": "р",
+      "caseUp": "Р",
+      "caps": "Р",
+      "shiftCaps": "р"
+    }
+  },
+  "KeyJ": {
+    "eng": {
+      "caseDown": "j",
+      "caseUp": "J",
+      "caps": "J",
+      "shiftCaps": "j"
+    },
+    "rus": {
+      "caseDown": "о",
+      "caseUp": "О",
+      "caps": "О",
+      "shiftCaps": "о"
+    }
+  },
+  "KeyK": {
+    "eng": {
+      "caseDown": "k",
+      "caseUp": "K",
+      "caps": "K",
+      "shiftCaps": "k"
+    },
+    "rus": {
+      "caseDown": "л",
+      "caseUp": "Л",
+      "caps": "Л",
+      "shiftCaps": "л"
+    }
+  },
+  "KeyL": {
+    "eng": {
+      "caseDown": "l",
+      "caseUp": "L",
+      "caps": "L",
+      "shiftCaps": "l"
+    },
+    "rus": {
+      "caseDown": "д",
+      "caseUp": "Д",
+      "caps": "Д",
+      "shiftCaps": "д"
+    }
+  },
+  "Semicolon": {
+    "eng": {
+      "caseDown": ";",
+      "caseUp": ":",
+      "caps": ";",
+      "shiftCaps": ":"
+    },
+    "rus": {
+      "caseDown": "ж",
+      "caseUp": "Ж",
+      "caps": "Ж",
+      "shiftCaps": "ж"
+    }
+  },
+  "Quote": {
+    "eng": {
+      "caseDown": "'",
+      "caseUp": "&quot;",
+      "caps": "'",
+      "shiftCaps": "&quot;"
+    },
+    "rus": {
+      "caseDown": "э",
+      "caseUp": "Э",
+      "caps": "Э",
+      "shiftCaps": "э"
+    }
+  },
+  "Enter": {
+    "eng": {
+      "caseDown": "enter",
+      "caseUp": "enter",
+      "caps": "enter",
+      "shiftCaps": "enter"
+    },
+    "rus": {
+      "caseDown": "enter",
+      "caseUp": "enter",
+      "caps": "enter",
+      "shiftCaps": "enter"
+    }
+  },
+  "Smile4": {
+    "eng": {
+      "caseDown": "😢",
+      "caseUp": "😭",
+      "caps": "😭",
+      "shiftCaps": "😢"
+    },
+    "rus": {
+      "caseDown": "😅",
+      "caseUp": "😅",
+      "caps": "😅",
+      "shiftCaps": "😅"
+    }
+  },
+  "ShiftLeft": {
+    "eng": {
+      "caseDown": "shift",
+      "caseUp": "shift",
+      "caps": "shift",
+      "shiftCaps": "shift"
+    },
+    "rus": {
+      "caseDown": "shift",
+      "caseUp": "shift",
+      "caps": "shift",
+      "shiftCaps": "shift"
+    }
+  },
+  "KeyZ": {
+    "eng": {
+      "caseDown": "z",
+      "caseUp": "Z",
+      "caps": "Z",
+      "shiftCaps": "z"
+    },
+    "rus": {
+      "caseDown": "я",
+      "caseUp": "Я",
+      "caps": "Я",
+      "shiftCaps": "я"
+    }
+  },
+  "KeyX": {
+    "eng": {
+      "caseDown": "x",
+      "caseUp": "X",
+      "caps": "X",
+      "shiftCaps": "x"
+    },
+    "rus": {
+      "caseDown": "ч",
+      "caseUp": "Ч",
+      "caps": "Ч",
+      "shiftCaps": "ч"
+    }
+  },
+  "KeyC": {
+    "eng": {
+      "caseDown": "c",
+      "caseUp": "C",
+      "caps": "C",
+      "shiftCaps": "c"
+    },
+    "rus": {
+      "caseDown": "с",
+      "caseUp": "С",
+      "caps": "С",
+      "shiftCaps": "с"
+    }
+  },
+  "KeyV": {
+    "eng": {
+      "caseDown": "v",
+      "caseUp": "V",
+      "caps": "V",
+      "shiftCaps": "v"
+    },
+    "rus": {
+      "caseDown": "м",
+      "caseUp": "М",
+      "caps": "М",
+      "shiftCaps": "м"
+    }
+  },
+  "KeyB": {
+    "eng": {
+      "caseDown": "b",
+      "caseUp": "B",
+      "caps": "B",
+      "shiftCaps": "b"
+    },
+    "rus": {
+      "caseDown": "и",
+      "caseUp": "И",
+      "caps": "И",
+      "shiftCaps": "и"
+    }
+  },
+  "KeyN": {
+    "eng": {
+      "caseDown": "n",
+      "caseUp": "N",
+      "caps": "N",
+      "shiftCaps": "n"
+    },
+    "rus": {
+      "caseDown": "т",
+      "caseUp": "Т",
+      "caps": "Т",
+      "shiftCaps": "т"
+    }
+  },
+  "KeyM": {
+    "eng": {
+      "caseDown": "m",
+      "caseUp": "M",
+      "caps": "M",
+      "shiftCaps": "m"
+    },
+    "rus": {
+      "caseDown": "ь",
+      "caseUp": "Ь",
+      "caps": "Ь",
+      "shiftCaps": "ь"
+    }
+  },
+  "Comma": {
+    "eng": {
+      "caseDown": ",",
+      "caseUp": "<",
+      "caps": ",",
+      "shiftCaps": "<"
+    },
+    "rus": {
+      "caseDown": "б",
+      "caseUp": "Б",
+      "caps": "Б",
+      "shiftCaps": "б"
+    }
+  },
+  "Period": {
+    "eng": {
+      "caseDown": ".",
+      "caseUp": ">",
+      "caps": ".",
+      "shiftCaps": ">"
+    },
+    "rus": {
+      "caseDown": "ю",
+      "caseUp": "Ю",
+      "caps": "Ю",
+      "shiftCaps": "ю"
+    }
+  },
+  "Slash": {
+    "eng": {
+      "caseDown": "/",
+      "caseUp": "?",
+      "caps": "/",
+      "shiftCaps": "?"
+    },
+    "rus": {
+      "caseDown": ".",
+      "caseUp": ",",
+      "caps": ".",
+      "shiftCaps": ","
+    }
+  },
+  "ShiftRight": {
+    "eng": {
+      "caseDown": "shift",
+      "caseUp": "shift",
+      "caps": "shift",
+      "shiftCaps": "shift"
+    },
+    "rus": {
+      "caseDown": "shift",
+      "caseUp": "shift",
+      "caps": "shift",
+      "shiftCaps": "shift"
+    }
+  },
+  "ArrowUp": {
+    "eng": {
+      "caseDown": "▲",
+      "caseUp": "▲",
+      "caps": "▲",
+      "shiftCaps": "▲"
+    },
+    "rus": {
+      "caseDown": "▲",
+      "caseUp": "▲",
+      "caps": "▲",
+      "shiftCaps": "▲"
+    }
+  },
+  "Smile5": {
+    "eng": {
+      "caseDown": "😘",
+      "caseUp": "😍",
+      "caps": "😍",
+      "shiftCaps": "😘"
+    },
+    "rus": {
+      "caseDown": "😘",
+      "caseUp": "😍",
+      "caps": "😍",
+      "shiftCaps": "😘"
+    }
+  },
+  "ControlLeft": {
+    "eng": {
+      "caseDown": "ctrl",
+      "caseUp": "ctrl",
+      "caps": "ctrl",
+      "shiftCaps": "ctrl"
+    },
+    "rus": {
+      "caseDown": "ctrl",
+      "caseUp": "ctrl",
+      "caps": "ctrl",
+      "shiftCaps": "ctrl"
+    }
+  },
+  "fn": {
+    "eng": {
+      "caseDown": "fn",
+      "caseUp": "fn",
+      "caps": "fn",
+      "shiftCaps": "fn"
+    },
+    "rus": {
+      "caseDown": "fn",
+      "caseUp": "fn",
+      "caps": "fn",
+      "shiftCaps": "fn"
+    }
+  },
+  "OSLeft": {
+    "eng": {
+      "caseDown": "opt",
+      "caseUp": "opt",
+      "caps": "opt",
+      "shiftCaps": "opt"
+    },
+    "rus": {
+      "caseDown": "opt",
+      "caseUp": "opt",
+      "caps": "opt",
+      "shiftCaps": "opt"
+    }
+  },
+  "AltLeft": {
+    "eng": {
+      "caseDown": "alt",
+      "caseUp": "alt",
+      "caps": "alt",
+      "shiftCaps": "alt"
+    },
+    "rus": {
+      "caseDown": "alt",
+      "caseUp": "alt",
+      "caps": "alt",
+      "shiftCaps": "alt"
+    }
+  },
+  "Space": {
+    "eng": {
+      "caseDown": "@progga",
+      "caseUp": "@progga",
+      "caps": "@progga",
+      "shiftCaps": "@progga"
+    },
+    "rus": {
+      "caseDown": "@progga",
+      "caseUp": "@progga",
+      "caps": "@progga",
+      "shiftCaps": "@progga"
+    }
+  },
+  "AltRight": {
+    "eng": {
+      "caseDown": "alt",
+      "caseUp": "alt",
+      "caps": "alt",
+      "shiftCaps": "alt"
+    },
+    "rus": {
+      "caseDown": "alt",
+      "caseUp": "alt",
+      "caps": "alt",
+      "shiftCaps": "alt"
+    }
+  },
+  "OSRight": {
+    "eng": {
+      "caseDown": "opt",
+      "caseUp": "opt",
+      "caps": "opt",
+      "shiftCaps": "opt"
+    },
+    "rus": {
+      "caseDown": "opt",
+      "caseUp": "opt",
+      "caps": "opt",
+      "shiftCaps": "opt"
+    }
+  },
+  "ControlRight": {
+    "eng": {
+      "caseDown": "ctrl",
+      "caseUp": "ctrl",
+      "caps": "ctrl",
+      "shiftCaps": "ctrl"
+    },
+    "rus": {
+      "caseDown": "ctrl",
+      "caseUp": "ctrl",
+      "caps": "ctrl",
+      "shiftCaps": "ctrl"
+    }
+  },
+  "ArrowLeft": {
+    "eng": {
+      "caseDown": "◀",
+      "caseUp": "◀",
+      "caps": "◀",
+      "shiftCaps": "◀"
+    },
+    "rus": {
+      "caseDown": "◀",
+      "caseUp": "◀",
+      "caps": "◀",
+      "shiftCaps": "◀"
+    }
+  },
+  "ArrowDown": {
+    "eng": {
+      "caseDown": "▼",
+      "caseUp": "▼",
+      "caps": "▼",
+      "shiftCaps": "▼"
+    },
+    "rus": {
+      "caseDown": "▼",
+      "caseUp": "▼",
+      "caps": "▼",
+      "shiftCaps": "▼"
+    }
+  },
+  "ArrowRight": {
+    "eng": {
+      "caseDown": "▶",
+      "caseUp": "▶",
+      "caps": "▶",
+      "shiftCaps": "▶"
+    },
+    "rus": {
+      "caseDown": "▶",
+      "caseUp": "▶",
+      "caps": "▶",
+      "shiftCaps": "▶"
+    }
+  }
+}

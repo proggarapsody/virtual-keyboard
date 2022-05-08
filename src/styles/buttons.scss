@@ -1,0 +1,202 @@
+.key {
+  background: var(--primary-key-bg-color);
+  height: 66px;
+  width: 66px;
+  border-radius: 100px;
+  box-shadow: 3px 5px 18px #00000096;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 4px solid var(--primary-border-color);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--primary-text-color);
+  &:hover {
+    box-shadow: 2px 2px 15px #00000081;
+    background: var(--primary-key-hover-color);
+    transform: scale(0.99);
+  }
+}
+
+.Escape {
+  background: var(--esc-bg-color);
+  color: var(--esc-text-color);
+  border: 4px solid var(--esc-border-color);
+  &:hover {
+    box-shadow: 2px 2px 15px #00000081;
+    background: var(--esc-hover-color);
+  }
+}
+
+.Insert,
+.Delete,
+.Backquote,
+.ShiftLeft,
+.ShiftRight,
+.ControlLeft,
+.ControlRight,
+.AltLeft,
+.AltRight,
+.OSLeft,
+.OSRight,
+.fn,
+.Tab,
+.Enter,
+.Backslash,
+.CapsLock,
+.Backspace {
+  background: var(--secondary-key-bg-color);
+  border: 4px solid var(--secondary-border-color);
+  color: var(--secondary-text-color);
+  &:hover {
+    box-shadow: 2px 2px 15px #00000081;
+    background: var(--secondary-key-hover-color);
+  }
+}
+
+.ShiftLeft {
+  width: 154px;
+}
+.CapsLock {
+  width: 124px;
+}
+.ShiftRight {
+  width: 130px;
+}
+.Backslash {
+  width: 111px;
+}
+
+.Enter {
+  width: 161px;
+}
+.Tab {
+  width: 102px;
+}
+.Space {
+  width: 433px;
+}
+.Backspace {
+  width: 148px;
+}
+
+.Smile,
+.Smile2,
+.Smile3,
+.Smile4,
+.Smile5 {
+  background: var(--smile-key-bg-color);
+  border: 4px solid var(--smile-border-color);
+  &:hover {
+    box-shadow: 2px 2px 15px #00000081;
+    background: var(--smile-key-hover-color);
+  }
+}
+
+.Smile {
+  margin-left: 10px;
+}
+
+.key.active {
+  box-shadow: 2px 2px 15px #00000081;
+
+  transform: scale(0.96);
+}
+
+.Insert.active,
+.Delete.active,
+.Backquote.active,
+.ShiftLeft.active,
+.ShiftRight.active,
+.ControlLeft.active,
+.ControlRight.active,
+.AltLeft.active,
+.AltRight.active,
+.OSLeft.active,
+.OSRight.active,
+.fn.active,
+.Tab.active,
+.Enter.active,
+.Backslash.active,
+.CapsLock.active,
+.Backspace.active {
+  box-shadow: 2px 2px 15px #00000081;
+
+  transform: scale(0.96);
+}
+
+@media (max-width: 1260px) {
+  .key {
+    height: 56px;
+    width: 56px;
+
+    font-size: 12px;
+  }
+  .ShiftLeft {
+    width: 122px;
+  }
+  .CapsLock {
+    width: 98px;
+  }
+  .ShiftRight {
+    width: 115px;
+  }
+  .Backslash {
+    width: 93px;
+  }
+
+  .Enter {
+    width: 138px;
+  }
+  .Tab {
+    width: 81px;
+  }
+  .Space {
+    width: 363px;
+  }
+  .Backspace {
+    width: 117px;
+  }
+  .Smile {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .key {
+    float: left;
+    height: 46px;
+
+    width: 8%;
+    border-radius: 12px;
+  }
+  .Space {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 482px) {
+  .key {
+    float: left;
+    height: 40px;
+
+    width: 7.5%;
+    border-radius: 12px;
+  }
+  .Space {
+    width: 40vw;
+  }
+}
+@media (max-width: 482px) {
+  .key {
+    float: left;
+    height: 40px;
+
+    width: 9%;
+    border-radius: 12px;
+  }
+  .Space {
+    width: 40vw;
+  }
+}
