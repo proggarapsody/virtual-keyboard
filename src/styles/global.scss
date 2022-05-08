@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --frame-bg-color: #3e3e3e;
+  --keyboard-bg-color: #facc00;
+  --page-bg-color: #000000;
+
+  --primary-key-bg-color: linear-gradient(180deg, #343434 0%, #212121 100%);
+  --primary-text-color: #facc00;
+  --primary-key-hover-color: linear-gradient(180deg, #2c2c2c 0%, #1b1b1b 100%);
+  --primary-border-color: #27272783;
+
+  --secondary-key-bg-color: linear-gradient(180deg, #7b7b7b 0%, #8c8c8c 100%);
+  --secondary-key-hover-color: linear-gradient(180deg, #717171 0%, #7e7e7e 100%);
+  --secondary-text-color: #facc00;
+  --secondary-border-color: #81818183;
+
+  --esc-bg-color: linear-gradient(220deg, #b59405 0%, #fcd733 70%, #facc00 90%);
+  --esc-hover-color: linear-gradient(180deg, #b59405 0%, #e8be00 100%);
+  --esc-text-color: #ffffff;
+  --esc-border-color: linear-gradient(220deg, #b59405 0%, #ffdc40 70%, #facc00 90%);
+
+  --smile-key-bg-color: #facc00;
+  --smile-key-hover-color: #efc300;
+  --smile-border-color: #efbf00;
+}
+
+[data-theme='pink'] {
+  --frame-bg-color: #b3575f;
+  --keyboard-bg-color: #ef7583;
+  --page-bg-color: #ffe8e8;
+
+  --primary-key-bg-color: #f5d4d4;
+  --primary-text-color: #af3845;
+  --primary-key-hover-color: #e4c4c4;
+  --primary-border-color: #dbbebe;
+
+  --secondary-key-bg-color: #e67a81;
+  --secondary-key-hover-color: #d67077;
+  --secondary-text-color: #ffffff;
+  --secondary-border-color: #d26f76;
+
+  --esc-bg-color: linear-gradient(220deg, #b63a49 0%, #ffffff33 50%, #d16673 74%);
+  --esc-hover-color: linear-gradient(220deg, #8d2632 0%, #ffffff0e 50%, #ae4451 74%);
+  --esc-text-color: #ffffff;
+  --esc-border-color: linear-gradient(-220deg, #662028 0%, #ffffff46 50%, #d16673 74%);
+
+  --smile-key-bg-color: #af3845;
+  --smile-key-hover-color: #a43441;
+  --smile-border-color: #a0333f;
+}
+
+[data-theme='blue'] {
+  --frame-bg-color: #9d8dda;
+  --keyboard-bg-color: #c0e1f0;
+  --page-bg-color: #f3feff;
+
+  --primary-key-bg-color: #efefff;
+  --primary-text-color: #5350a8;
+  --primary-key-hover-color: #ddddec;
+  --primary-border-color: #d4d4e2;
+
+  --secondary-key-bg-color: #ecec8f;
+  --secondary-key-hover-color: #dcdc84;
+  --secondary-text-color: #5350a8;
+  --secondary-border-color: #dada84;
+
+  --esc-bg-color: linear-gradient(220deg, #7e8cd2 0%, #9ba7e2 40%, #42115c 94%);
+  --esc-hover-color: linear-gradient(220deg, #7e8cd2 0%, #8997db 40%, #370d4d 94%);
+  --esc-text-color: #ffffff;
+  --esc-border-color: linear-gradient(220deg, #8d5185 0%, #ffffff2f 50%, #a1bafe 74%);
+
+  --smile-key-bg-color: #bba1ea;
+  --smile-key-hover-color: #b29ade;
+  --smile-border-color: #aa93d5;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  font-family: 'Comfortaa', sans-serif;
+  transition: color 0.2s linear, background 0.2s linear, border 0.2s linear;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+textarea {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.textarea {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  resize: none;
+  width: 70vw;
+  height: 150px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 28px;
+  color: var(--primary-text-color);
+  &:focus {
+    border: 2px solid var(--primary-text-color);
+  }
+  pointer-events: none;
+  transition: color 0.2s linear, background 0.2s linear, border 0.2s linear;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#select {
+  position: absolute;
+  cursor: pointer;
+  right: 50px;
+  top: 50px;
+  appearance: none;
+  box-shadow: none;
+  width: 150px;
+  background: transparent;
+  color: var(--primary-text-color);
+  border-radius: 5px;
+  padding: 6px 4px;
+  // border: 2px solid var(--primary-text-color);
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  opacity: 0.8;
+
+  &:focus {
+  }
+  &:hover {
+    background-color: var(--primary-border-color);
+  }
+  transition: color 0.2s linear, background 0.2s linear, border 0.2s linear;
+}
+
+.help {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--primary-text-color);
+  opacity: 0.6;
+  pointer-events: none;
+}
