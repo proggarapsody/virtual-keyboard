@@ -252,3 +252,9 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 - T01: `DESIGN.md` and studio brief derive concrete tokens/composition from the confirmed brief; user authorized inferred ordinary choices and no repeated design discovery. Render verification follows the first UI slice.
 - T02: Vitest/Playwright installed; Chromium starter smoke passes; Svelte check/build pass. Firefox/WebKit downloads in progress; first all-browser attempt reports missing binaries, not passing coverage.
 - T03 in progress: Chromium measurements in `docs/evidence/experiment-chromium.json`; aborted transaction retained the original 32 MiB blob. No physical audio/touch verification yet.
+
+### Keyboard and durable editor increment
+
+- T04–T06 implemented: validated schema, stable physical IDs, EN/RU maps, Edit/Play source lifecycle, temporary caret-aware scratchpad. Six rule tests and Chromium input journeys pass. Native `execCommand` insertion is retained specifically to preserve browser text undo; paste/composition remain native. Cross-browser/device acceptance remains pending.
+- T07–T11 implemented: property inheritance, group/multi selection, decorative legends, coalesced history, transactional revision-aware saves, fresh presets/duplicates, confirmed deletion, retained hidden-key overrides. Chromium appearance/library/reload journeys pass. Conflict/failure and full inventory journeys remain to verify.
+- `npm run check` reports zero errors/warnings; production build passes. No task with outstanding acceptance evidence is marked complete.
