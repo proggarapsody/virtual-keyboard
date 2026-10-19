@@ -29,9 +29,7 @@ test('fresh presets preserve previous work; library deletion is confirmed', asyn
 }) => {
   await page.goto('./')
   await expect(page.getByRole('status')).toHaveText('Saved')
-  await page
-    .getByRole('button', { name: 'Quiet minimalist', exact: true })
-    .click()
+  await page.getByRole('button', { name: /Quiet minimalist/ }).click()
   await expect(page.locator('h1')).toHaveText('Quiet minimalist')
   await page
     .locator('.library .design-item')
@@ -43,7 +41,9 @@ test('fresh presets preserve previous work; library deletion is confirmed', asyn
   await expect(page.locator('dialog')).not.toBeVisible()
   await page.getByRole('button', { name: 'Duplicate', exact: true }).click()
   await expect(page.locator('h1')).toHaveText('Tactile mechanical copy')
-  await expect(page.getByRole('button', { name: 'Undo', exact: true })).toBeDisabled()
+  await expect(
+    page.getByRole('button', { name: 'Undo', exact: true }),
+  ).toBeDisabled()
 })
 test('mixed selection, selected sound inheritance and undo remain isolated across designs', async ({
   page,
@@ -67,9 +67,7 @@ test('mixed selection, selected sound inheritance and undo remain isolated acros
   await expect(page.locator('.inspector')).toContainText(
     'Inherited from global',
   )
-  await page
-    .getByRole('button', { name: 'Quiet minimalist', exact: true })
-    .click()
+  await page.getByRole('button', { name: /Quiet minimalist/ }).click()
   await expect(page.getByLabel('Apply sound to')).toHaveValue('global')
   await expect(
     page.getByRole('button', { name: 'Undo', exact: true }),

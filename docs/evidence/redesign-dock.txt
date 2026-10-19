@@ -1,0 +1,14 @@
+
+> keyboard-artist@0.0.0 test:e2e
+> playwright test --project=chromium --grep real Web Audio
+
+[WebServer] (node:66672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:66680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/media.spec.ts:89:1 › real Web Audio creates one press/release for repeats and concurrent sources (1.0s)
+
+  1 passed (1.8s)

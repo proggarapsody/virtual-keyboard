@@ -76,6 +76,7 @@ test('rendered desktop/mobile/zoom/reduced-motion evidence', async ({
   await page.keyboard.down('KeyA')
   await expect(page.locator('[data-code=KeyA]')).toHaveCSS('transform', 'none')
   await page.keyboard.up('KeyA')
+  await page.screenshot({ path: `${captureDir}/play.png`, fullPage: true })
   await page.getByRole('button', { name: 'Exit Play' }).click()
   await page.getByLabel('Layout', { exact: true }).selectOption('full')
   await page.screenshot({ path: `${captureDir}/full-size.png`, fullPage: true })
@@ -85,4 +86,35 @@ test('rendered desktop/mobile/zoom/reduced-motion evidence', async ({
   await expect(
     page.getByRole('button', { name: 'Mute', exact: true }),
   ).toBeVisible()
+})
+
+test('design system uses live components and reflows without accessibility violations', async ({
+  page,
+  browserName,
+}) => {
+  await page.goto('./design-system.html')
+  await expect(
+    page.getByRole('heading', { name: 'Soft light. Solid controls.' }),
+  ).toBeVisible()
+  await page.getByRole('button', { name: 'Sound on', exact: true }).click()
+  await expect(
+    page.getByRole('button', { name: 'Muted', exact: true }),
+  ).toHaveAttribute('aria-pressed', 'true')
+  for (const width of [1440, 320]) {
+    await page.setViewportSize({ width, height: 900 })
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true)
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([])
+    const captureDir =
+      browserName === 'chromium'
+        ? '.impeccable/review'
+        : `.impeccable/review/${browserName}`
+    await page.screenshot({
+      path: `${captureDir}/system-${width}.png`,
+      fullPage: true,
+    })
+  }
 })

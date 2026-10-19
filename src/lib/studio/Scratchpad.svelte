@@ -8,7 +8,7 @@
     $props()
 </script>
 
-<section class="scratchpad">
+<section class="scratchpad glass-panel">
   <div class="section-heading">
     <h2>{m.scratchpad}</h2>
     <span>{m.temporaryText}</span><button onclick={() => (studio.scratch = '')}

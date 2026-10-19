@@ -1,398 +1,434 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T16:13:35.369726+00:00",
+  "generatedAt": "2026-10-19T16:46:27.286894+00:00",
   "title": "Design System: Keyboard Artist",
   "extensions": {
     "colorMeta": {
-      "chrome": {
+      "text-primary": {
         "role": "neutral",
-        "displayName": "Chrome",
+        "displayName": "Text Primary",
         "tonalRamp": [
-          "oklch(15% 0.01080 260.68)",
-          "oklch(26% 0.01080 260.68)",
-          "oklch(38% 0.01080 260.68)",
-          "oklch(49% 0.01080 260.68)",
-          "oklch(61% 0.01080 260.68)",
-          "oklch(72% 0.01080 260.68)",
-          "oklch(84% 0.01080 260.68)",
-          "oklch(95% 0.01080 260.68)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "surface": {
+      "text-secondary": {
         "role": "neutral",
-        "displayName": "Surface",
+        "displayName": "Text Secondary",
         "tonalRamp": [
-          "oklch(15% 0.01442 261.67)",
-          "oklch(26% 0.01442 261.67)",
-          "oklch(38% 0.01442 261.67)",
-          "oklch(49% 0.01442 261.67)",
-          "oklch(61% 0.01442 261.67)",
-          "oklch(72% 0.01442 261.67)",
-          "oklch(84% 0.01442 261.67)",
-          "oklch(95% 0.01442 261.67)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "border": {
+      "text-muted": {
         "role": "neutral",
-        "displayName": "Border",
+        "displayName": "Text Muted",
         "tonalRamp": [
-          "oklch(15% 0.02098 259.40)",
-          "oklch(26% 0.02098 259.40)",
-          "oklch(38% 0.02098 259.40)",
-          "oklch(49% 0.02098 259.40)",
-          "oklch(61% 0.02098 259.40)",
-          "oklch(72% 0.02098 259.40)",
-          "oklch(84% 0.02098 259.40)",
-          "oklch(95% 0.02098 259.40)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "text": {
+      "surface-glass": {
         "role": "neutral",
-        "displayName": "Text",
+        "displayName": "Surface Glass",
         "tonalRamp": [
-          "oklch(15% 0.00343 247.86)",
-          "oklch(26% 0.00343 247.86)",
-          "oklch(38% 0.00343 247.86)",
-          "oklch(49% 0.00343 247.86)",
-          "oklch(61% 0.00343 247.86)",
-          "oklch(72% 0.00343 247.86)",
-          "oklch(84% 0.00343 247.86)",
-          "oklch(95% 0.00343 247.86)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "muted": {
+      "surface-raised": {
         "role": "neutral",
-        "displayName": "Muted",
+        "displayName": "Surface Raised",
         "tonalRamp": [
-          "oklch(15% 0.01971 255.55)",
-          "oklch(26% 0.01971 255.55)",
-          "oklch(38% 0.01971 255.55)",
-          "oklch(49% 0.01971 255.55)",
-          "oklch(61% 0.01971 255.55)",
-          "oklch(72% 0.01971 255.55)",
-          "oklch(84% 0.01971 255.55)",
-          "oklch(95% 0.01971 255.55)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "action": {
+      "surface-inset": {
+        "role": "neutral",
+        "displayName": "Surface Inset",
+        "tonalRamp": [
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
+        ]
+      },
+      "surface-control": {
+        "role": "neutral",
+        "displayName": "Surface Control",
+        "tonalRamp": [
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
+        ]
+      },
+      "line-subtle": {
+        "role": "neutral",
+        "displayName": "Line Subtle",
+        "tonalRamp": [
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Line Strong",
+        "tonalRamp": [
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
+        ]
+      },
+      "accent": {
         "role": "primary",
-        "displayName": "Action",
+        "displayName": "Accent",
         "tonalRamp": [
-          "oklch(15% 0.08474 261.73)",
-          "oklch(26% 0.08474 261.73)",
-          "oklch(38% 0.08474 261.73)",
-          "oklch(49% 0.08474 261.73)",
-          "oklch(61% 0.08474 261.73)",
-          "oklch(72% 0.08474 261.73)",
-          "oklch(84% 0.08474 261.73)",
-          "oklch(95% 0.08474 261.73)"
+          "oklch(15% 0.06 350)",
+          "oklch(26% 0.06 350)",
+          "oklch(38% 0.06 350)",
+          "oklch(49% 0.06 350)",
+          "oklch(61% 0.06 350)",
+          "oklch(72% 0.06 350)",
+          "oklch(84% 0.06 350)",
+          "oklch(95% 0.06 350)"
         ]
       },
-      "control": {
-        "role": "neutral",
-        "displayName": "Control",
-        "tonalRamp": [
-          "oklch(15% 0.01780 262.23)",
-          "oklch(26% 0.01780 262.23)",
-          "oklch(38% 0.01780 262.23)",
-          "oklch(49% 0.01780 262.23)",
-          "oklch(61% 0.01780 262.23)",
-          "oklch(72% 0.01780 262.23)",
-          "oklch(84% 0.01780 262.23)",
-          "oklch(95% 0.01780 262.23)"
-        ]
-      },
-      "control-hover": {
-        "role": "neutral",
-        "displayName": "Control Hover",
-        "tonalRamp": [
-          "oklch(15% 0.02126 259.40)",
-          "oklch(26% 0.02126 259.40)",
-          "oklch(38% 0.02126 259.40)",
-          "oklch(49% 0.02126 259.40)",
-          "oklch(61% 0.02126 259.40)",
-          "oklch(72% 0.02126 259.40)",
-          "oklch(84% 0.02126 259.40)",
-          "oklch(95% 0.02126 259.40)"
-        ]
-      },
-      "primary": {
+      "accent-ink": {
         "role": "primary",
-        "displayName": "Primary",
+        "displayName": "Accent Ink",
         "tonalRamp": [
-          "oklch(15% 0.07215 264.08)",
-          "oklch(26% 0.07215 264.08)",
-          "oklch(38% 0.07215 264.08)",
-          "oklch(49% 0.07215 264.08)",
-          "oklch(61% 0.07215 264.08)",
-          "oklch(72% 0.07215 264.08)",
-          "oklch(84% 0.07215 264.08)",
-          "oklch(95% 0.07215 264.08)"
+          "oklch(15% 0.06 350)",
+          "oklch(26% 0.06 350)",
+          "oklch(38% 0.06 350)",
+          "oklch(49% 0.06 350)",
+          "oklch(61% 0.06 350)",
+          "oklch(72% 0.06 350)",
+          "oklch(84% 0.06 350)",
+          "oklch(95% 0.06 350)"
         ]
       },
-      "primary-ink": {
-        "role": "primary",
-        "displayName": "Primary Ink",
+      "success": {
+        "role": "secondary",
+        "displayName": "Success",
         "tonalRamp": [
-          "oklch(15% 0.06241 259.73)",
-          "oklch(26% 0.06241 259.73)",
-          "oklch(38% 0.06241 259.73)",
-          "oklch(49% 0.06241 259.73)",
-          "oklch(61% 0.06241 259.73)",
-          "oklch(72% 0.06241 259.73)",
-          "oklch(84% 0.06241 259.73)",
-          "oklch(95% 0.06241 259.73)"
+          "oklch(15% 0.035 160)",
+          "oklch(26% 0.035 160)",
+          "oklch(38% 0.035 160)",
+          "oklch(49% 0.035 160)",
+          "oklch(61% 0.035 160)",
+          "oklch(72% 0.035 160)",
+          "oklch(84% 0.035 160)",
+          "oklch(95% 0.035 160)"
+        ]
+      },
+      "danger": {
+        "role": "secondary",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15% 0.07 25)",
+          "oklch(26% 0.07 25)",
+          "oklch(38% 0.07 25)",
+          "oklch(49% 0.07 25)",
+          "oklch(61% 0.07 25)",
+          "oklch(72% 0.07 25)",
+          "oklch(84% 0.07 25)",
+          "oklch(95% 0.07 25)"
         ]
       },
       "focus": {
         "role": "neutral",
         "displayName": "Focus",
         "tonalRamp": [
-          "oklch(15% 0.00000 89.88)",
-          "oklch(26% 0.00000 89.88)",
-          "oklch(38% 0.00000 89.88)",
-          "oklch(49% 0.00000 89.88)",
-          "oklch(61% 0.00000 89.88)",
-          "oklch(72% 0.00000 89.88)",
-          "oklch(84% 0.00000 89.88)",
-          "oklch(95% 0.00000 89.88)"
+          "oklch(15% 0.06 350)",
+          "oklch(26% 0.06 350)",
+          "oklch(38% 0.06 350)",
+          "oklch(49% 0.06 350)",
+          "oklch(61% 0.06 350)",
+          "oklch(72% 0.06 350)",
+          "oklch(84% 0.06 350)",
+          "oklch(95% 0.06 350)"
         ]
       },
-      "focus-underlay": {
-        "role": "neutral",
-        "displayName": "Focus Underlay",
+      "primary-ink": {
+        "role": "primary",
+        "displayName": "Primary Ink",
         "tonalRamp": [
-          "oklch(15% 0.01360 258.37)",
-          "oklch(26% 0.01360 258.37)",
-          "oklch(38% 0.01360 258.37)",
-          "oklch(49% 0.01360 258.37)",
-          "oklch(61% 0.01360 258.37)",
-          "oklch(72% 0.01360 258.37)",
-          "oklch(84% 0.01360 258.37)",
-          "oklch(95% 0.01360 258.37)"
+          "oklch(15% 0.012 310)",
+          "oklch(26% 0.012 310)",
+          "oklch(38% 0.012 310)",
+          "oklch(49% 0.012 310)",
+          "oklch(61% 0.012 310)",
+          "oklch(72% 0.012 310)",
+          "oklch(84% 0.012 310)",
+          "oklch(95% 0.012 310)"
         ]
       },
-      "selected": {
-        "role": "neutral",
-        "displayName": "Selected",
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
         "tonalRamp": [
-          "oklch(15% 0.03046 261.85)",
-          "oklch(26% 0.03046 261.85)",
-          "oklch(38% 0.03046 261.85)",
-          "oklch(49% 0.03046 261.85)",
-          "oklch(61% 0.03046 261.85)",
-          "oklch(72% 0.03046 261.85)",
-          "oklch(84% 0.03046 261.85)",
-          "oklch(95% 0.03046 261.85)"
-        ]
-      },
-      "selected-border": {
-        "role": "neutral",
-        "displayName": "Selected Border",
-        "tonalRamp": [
-          "oklch(15% 0.06817 258.60)",
-          "oklch(26% 0.06817 258.60)",
-          "oklch(38% 0.06817 258.60)",
-          "oklch(49% 0.06817 258.60)",
-          "oklch(61% 0.06817 258.60)",
-          "oklch(72% 0.06817 258.60)",
-          "oklch(84% 0.06817 258.60)",
-          "oklch(95% 0.06817 258.60)"
-        ]
-      },
-      "error": {
-        "role": "neutral",
-        "displayName": "Error",
-        "tonalRamp": [
-          "oklch(15% 0.05084 12.65)",
-          "oklch(26% 0.05084 12.65)",
-          "oklch(38% 0.05084 12.65)",
-          "oklch(49% 0.05084 12.65)",
-          "oklch(61% 0.05084 12.65)",
-          "oklch(72% 0.05084 12.65)",
-          "oklch(84% 0.05084 12.65)",
-          "oklch(95% 0.05084 12.65)"
-        ]
-      },
-      "error-text": {
-        "role": "neutral",
-        "displayName": "Error Text",
-        "tonalRamp": [
-          "oklch(15% 0.03444 11.14)",
-          "oklch(26% 0.03444 11.14)",
-          "oklch(38% 0.03444 11.14)",
-          "oklch(49% 0.03444 11.14)",
-          "oklch(61% 0.03444 11.14)",
-          "oklch(72% 0.03444 11.14)",
-          "oklch(84% 0.03444 11.14)",
-          "oklch(95% 0.03444 11.14)"
+          "oklch(15% 0.06 350)",
+          "oklch(26% 0.06 350)",
+          "oklch(38% 0.06 350)",
+          "oklch(49% 0.06 350)",
+          "oklch(61% 0.06 350)",
+          "oklch(72% 0.06 350)",
+          "oklch(84% 0.06 350)",
+          "oklch(95% 0.06 350)"
         ]
       }
     },
     "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Design-system introduction only."
+      },
       "title": {
         "displayName": "Title",
-        "purpose": "Canvas heading."
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
+      },
+      "title-narrow": {
+        "displayName": "Title Narrow",
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       },
       "brand": {
         "displayName": "Brand",
-        "purpose": "Application wordmark."
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       },
       "section": {
         "displayName": "Section",
-        "purpose": "Panel headings."
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Controls and scratchpad."
-      },
-      "description": {
-        "displayName": "Description",
-        "purpose": "Supporting text."
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Labels and compact status."
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       },
-      "key": {
-        "displayName": "Key",
-        "purpose": "Keyboard legends."
+      "support": {
+        "displayName": "Support",
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Implemented interface hierarchy; see DESIGN.md for context and density limits."
       }
     },
     "shadows": [
       {
+        "name": "panel",
+        "value": "0 18px 50px rgb(17 10 25 / 20%), inset 0 1px 0 rgb(255 255 255 / 7%)",
+        "purpose": "Shared glass-panel and dialog elevation."
+      },
+      {
         "name": "board",
-        "value": "0 18px 28px #0004",
-        "purpose": "Seats the authored board."
+        "value": "0 12px 0 -7px rgb(0 0 0 / 45%), 0 22px 28px -16px rgb(0 0 0 / 70%), inset 0 1px 1px rgb(255 255 255 / 16%), inset 0 0 0 1px rgb(255 255 255 / 9%)",
+        "purpose": "Authored keyboard base, independent of chrome material."
       },
       {
         "name": "cap",
-        "value": "inset 0 -3px 0 #0003, 0 3px 4px #0004",
-        "purpose": "Default sculpted keycap."
-      },
-      {
-        "name": "physical-pressed",
-        "value": "inset 0 -1px 0 #0003",
-        "purpose": "Pressed physical cap."
-      },
-      {
-        "name": "focus-underlay",
-        "value": "0 0 0 5px #12161c",
-        "purpose": "Dark underlay beneath white focus outline."
-      },
-      {
-        "name": "selected-key",
-        "value": "0 0 0 4px #12161c",
-        "purpose": "Dark underlay beneath selected key outline."
+        "value": "inset 0 1px 0 rgb(255 255 255 / 15%), inset 0 -3px 0 rgb(0 0 0 / 28%), 0 2px 2px rgb(0 0 0 / 35%)",
+        "purpose": "Authored cap depth at rest."
       }
     ],
     "motion": [
       {
-        "name": "key-transition",
-        "value": "transform 70ms",
-        "purpose": "Physical press response; removed for reduced motion."
+        "name": "duration-feedback",
+        "value": "160ms",
+        "purpose": "Interface background, border, and opacity feedback."
       },
       {
-        "name": "ripple",
-        "value": "ripple var(--duration) ease-out",
-        "purpose": "Scales .8 to 1.16 and fades; duration and strength are document values. Removed for reduced motion."
+        "name": "key-filter",
+        "value": "120ms",
+        "purpose": "Key brightness feedback; effect duration remains authored."
       },
       {
-        "name": "keyboard-scroll",
-        "value": "240px smooth",
-        "purpose": "Reach overflowed keys; instant under reduced motion."
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Global transition/animation duration override; physical key displacement removed."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact-player",
-        "value": "max-width: 1099px"
+        "name": "desktop-compact-max",
+        "value": "1300px"
       },
       {
-        "name": "narrow",
-        "value": "max-width: 480px"
+        "name": "playback-max",
+        "value": "1099px"
       },
       {
-        "name": "wide-keys",
-        "value": "min-width: 1550px"
+        "name": "phone-max",
+        "value": "700px"
+      },
+      {
+        "name": "keyboard-and-showcase-small-max",
+        "value": "600px"
+      },
+      {
+        "name": "large-keyboard-min",
+        "value": "1700px"
       }
-    ],
-    "previewRampNote": "Tonal ramps are synthesized OKLCH preview metadata; only frontmatter colors are implemented application primitives."
+    ]
   },
   "components": [
     {
-      "name": "Default button",
+      "name": "Secondary button",
       "kind": "button",
-      "refersTo": "button-default",
-      "description": "Compact secondary action.",
-      "html": "<button class=\"ds-button\">Export design</button>",
-      "css": ".ds-button{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;background:#292e37;color:#f1f3f5;cursor:pointer}.ds-button:hover{background:#373e49}.ds-button:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}.ds-button:disabled{opacity:.5;cursor:default}"
+      "refersTo": "button-secondary",
+      "description": "Shared secondary button primitive.",
+      "html": "<button class=\"ds-button\">Open design</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:8px 13px;border:1px solid var(--line-subtle);border-radius:var(--radius-control);background:var(--surface-raised);color:var(--text-primary);font:600 12px/1.55 \"Manrope Variable\",sans-serif;cursor:pointer;transition:background var(--duration-feedback),border-color var(--duration-feedback),opacity var(--duration-feedback)}.ds-button:hover:not(:disabled){background:rgb(255 255 255 / 13%);border-color:var(--line-strong)}.ds-button:active:not(:disabled){background:rgb(255 255 255 / 18%)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:4px}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}"
     },
     {
       "name": "Primary button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Main player or editing action.",
-      "html": "<button class=\"ds-primary\">Play</button>",
-      "css": ".ds-primary{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;background:#b7cfff;color:#172a49;border-color:#b7cfff;font-weight:650;cursor:pointer}.ds-primary:hover{background:#b7cfff}.ds-primary:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}.ds-primary:disabled{opacity:.5;cursor:default}"
+      "description": "Shared primary button primitive.",
+      "html": "<button class=\"ds-button\">Play keyboard</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:8px 13px;border:1px solid var(--line-subtle);border-radius:var(--radius-control);background:var(--surface-raised);color:var(--text-primary);font:600 12px/1.55 \"Manrope Variable\",sans-serif;cursor:pointer;transition:background var(--duration-feedback),border-color var(--duration-feedback),opacity var(--duration-feedback)}.ds-button:hover:not(:disabled){background:rgb(255 255 255 / 13%);border-color:var(--line-strong)}.ds-button:active:not(:disabled){background:rgb(255 255 255 / 18%)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:4px}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}.ds-button{background:var(--text-primary);border-color:transparent;color:#2c2531}.ds-button:hover:not(:disabled){background:#ecd5e1;border-color:transparent}"
     },
     {
-      "name": "Inspector field",
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Shared ghost button primitive.",
+      "html": "<button class=\"ds-button\">Open design</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:8px 13px;border:1px solid var(--line-subtle);border-radius:var(--radius-control);background:var(--surface-raised);color:var(--text-primary);font:600 12px/1.55 \"Manrope Variable\",sans-serif;cursor:pointer;transition:background var(--duration-feedback),border-color var(--duration-feedback),opacity var(--duration-feedback)}.ds-button:hover:not(:disabled){background:rgb(255 255 255 / 13%);border-color:var(--line-strong)}.ds-button:active:not(:disabled){background:rgb(255 255 255 / 18%)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:4px}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}.ds-button{background:transparent;border-color:transparent}"
+    },
+    {
+      "name": "Design name field",
       "kind": "input",
       "refersTo": "input",
-      "description": "Named, editable design property.",
-      "html": "<label class=\"ds-label\">Design name<input class=\"ds-input\" value=\"Tactile mechanical\" /></label>",
-      "css": ".ds-label{display:flex;flex-direction:column;gap:6px;font:12px system-ui;color:var(--muted,#b4bdc9)}.ds-input{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;min-width:0;background:#292e37;color:#f1f3f5;caret-color:#b7cfff}.ds-input:hover{border-color:var(--border,#3c434e)}.ds-input:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+      "description": "Native recessed text input with visible focus.",
+      "html": "<label class=\"ds-label\">Design name<input class=\"ds-input\" value=\"Evening practice\"></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:7px;color:var(--text-secondary);font:11px/1.55 \"Manrope Variable\",sans-serif}.ds-input{width:100%;min-width:0;border:1px solid var(--line-subtle);border-radius:var(--radius-field);background:var(--surface-inset);color:var(--text-primary);padding:10px 11px;font:12px/1.55 \"Manrope Variable\",sans-serif;caret-color:var(--accent)}.ds-input:hover{border-color:var(--line-strong)}.ds-input:focus-visible{outline:2px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Scratchpad",
-      "kind": "input",
-      "refersTo": "scratchpad",
-      "description": "A resizable typing surface.",
-      "html": "<textarea class=\"ds-scratchpad\" aria-label=\"Scratchpad\">Try your keyboard here.</textarea>",
-      "css": ".ds-scratchpad{width:100%;height:150px;resize:vertical;background:var(--surface,#20242b);color:#f1f3f5;border:1px solid var(--border,#3c434e);border-radius:8px;padding:18px;font:16px/1.6 system-ui;caret-color:#b7cfff}.ds-scratchpad:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+      "name": "Glass panel",
+      "kind": "card",
+      "refersTo": "glass-panel",
+      "description": "Continuous smoked-glass material, with backdrop fallback.",
+      "html": "<section class=\"ds-glass\"><h2 class=\"ds-heading\">Your designs</h2><p class=\"ds-copy\">Saved in this browser.</p></section>",
+      "css": ".ds-glass{padding:20px 17px;background:var(--surface-glass);border:1px solid var(--line-subtle);border-radius:var(--radius-panel);box-shadow:var(--shadow-panel);backdrop-filter:blur(28px) saturate(115%);color:var(--text-primary);font-family:\"Manrope Variable\",sans-serif}.ds-heading{margin:0;font-size:13px;font-weight:650;letter-spacing:-.15px}.ds-copy{margin:7px 0 0;font-size:10px;line-height:1.55;color:var(--text-muted)}@supports not(backdrop-filter:blur(1px)){.ds-glass{background:#302a36}}"
     },
     {
-      "name": "Current design",
+      "name": "Library selection",
       "kind": "nav",
       "refersTo": "library-active",
-      "description": "Current local design in the library.",
-      "html": "<button class=\"ds-design\" aria-current=\"true\">Tactile mechanical</button>",
-      "css": ".ds-design{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;width:100%;text-align:left;background:#333c4c;border-color:#7f9ac3;color:#f1f3f5;font-size:13px;margin:6px 0;cursor:pointer}.ds-design:hover{background:#333c4c}.ds-design:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+      "description": "Current local design uses fill, border, and a check icon.",
+      "html": "<nav aria-label=\"Local designs\"><button class=\"ds-library\" aria-current=\"true\"><span>Evening practice</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg></button></nav>",
+      "css": ".ds-library{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:11px 8px;border:1px solid var(--line-subtle);border-radius:14px;background:rgb(255 255 255 / 9%);color:var(--text-primary);font:600 11px/1.55 \"Manrope Variable\",sans-serif;text-align:left;cursor:pointer}.ds-library svg{color:var(--accent)}.ds-library:hover{background:rgb(255 255 255 / 13%);border-color:var(--line-strong)}.ds-library:active{background:rgb(255 255 255 / 18%)}.ds-library:focus-visible{outline:2px solid var(--focus);outline-offset:4px}"
     },
     {
-      "name": "Mechanical key",
+      "name": "Master volume",
+      "kind": "input",
+      "description": "Native range input with text value and rose accent.",
+      "html": "<label class=\"ds-volume\">Master volume \u00b7 70%<input class=\"ds-range\" type=\"range\" min=\"0\" max=\"100\" value=\"70\"></label>",
+      "css": ".ds-volume{display:flex;flex-direction:column;gap:7px;color:var(--text-secondary);font:11px/1.55 \"Manrope Variable\",sans-serif}.ds-range{width:100%;height:20px;margin:0;accent-color:var(--accent);cursor:pointer}.ds-range:focus-visible{outline:2px solid var(--focus);outline-offset:4px}"
+    },
+    {
+      "name": "Listening dock",
       "kind": "custom",
-      "description": "Default authored key showing physical press depth.",
-      "html": "<button class=\"ds-key\">A</button>",
-      "css": ".ds-key{position:relative;width:38px;height:43px;padding:8px 9px;border:0;border-radius:7px;text-align:left;font:11px system-ui;background:#d9d4c9;color:#292c30;box-shadow:inset 0 -3px 0 #0003,0 3px 4px #0004;transition:transform 70ms;cursor:pointer}.ds-key:hover{filter:brightness(1.06)}.ds-key:active{filter:brightness(.85);transform:translateY(2.1px);box-shadow:inset 0 -1px 0 #0003}.ds-key:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}@media(prefers-reduced-motion:reduce){.ds-key{transition:none}.ds-key:active{transform:none;outline:2px solid #f3bc69}}"
+      "refersTo": "listening-dock",
+      "description": "Input feedback motif and sound action; bars are not an audio analyzer.",
+      "html": "<div class=\"ds-dock\"><span class=\"ds-bars\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i><i></i></span><button class=\"ds-button\">Enable sound</button></div>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:8px 13px;border:1px solid var(--line-subtle);border-radius:var(--radius-control);background:var(--surface-raised);color:var(--text-primary);font:600 12px/1.55 \"Manrope Variable\",sans-serif;cursor:pointer;transition:background var(--duration-feedback),border-color var(--duration-feedback),opacity var(--duration-feedback)}.ds-button:hover:not(:disabled){background:rgb(255 255 255 / 13%);border-color:var(--line-strong)}.ds-button:active:not(:disabled){background:rgb(255 255 255 / 18%)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:4px}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}.ds-dock{display:flex;align-items:center;gap:15px;max-width:540px;padding:9px 12px;border:1px solid var(--line-subtle);border-radius:21px;background:rgb(16 12 21 / 65%);box-shadow:inset 0 1px 0 rgb(255 255 255 / 3%)}.ds-bars{display:flex;align-items:center;justify-content:center;gap:3px;width:46px;height:34px}.ds-bars i{width:6px;height:13px;background:var(--text-primary);border-radius:5px}.ds-bars i:nth-child(2),.ds-bars i:nth-child(4){height:25px}.ds-bars i:nth-child(3){height:34px}"
     }
   ],
   "narrative": {
-    "northStar": "A quiet graphite workspace",
-    "overview": "The editor surrounds an expressive keyboard with subdued, functional chrome. Dense controls and explicit status text support repeated editing; the keyboard carries the color, material, and press response. This is a code-led record of the implemented system, with ordinary visual choices inferred under the user's authorization.\n\nThe editor is an Operate surface and the player is an Experience surface. Player mode removes the side inspectors and keeps the keyboard, scratchpad, and listening controls. Background images are supplied by the user; the interface uses system fonts and requires no remote UI assets.",
+    "northStar": "A smoked-glass keyboard workbench at dusk",
+    "overview": "A personal keyboard workbench made of smoked glass and tactile caps. Rose and lavender landscape light sits behind dark translucent panels; soft white actions and restrained rose feedback keep the editor legible. Compact Manrope chrome frames a keyboard whose colors, fonts, sound, and press effects belong to its author.\n\nThe application is an operating surface: the keyboard remains the central object. Continuous library and inspector panels support editing; Play removes both sidebars. A locally bundled landscape and font supply the atmosphere without remote asset requests.",
     "keyCharacteristics": [
-      "Graphite chrome with restrained blue actions and readable neutral text.",
-      "Compact editing controls around a physically proportioned keyboard.",
-      "Sculpted keycaps, explicit selection, and motion that responds to input."
+      "Smoked translucent panels over original dusk landscape light.",
+      "Soft white pill actions, rose accents, and compact Manrope typography.",
+      "Sculpted keyboard depth with selection and input-driven feedback."
     ],
     "rules": [
       {
         "name": "The Authored Color Rule",
-        "body": "Keep chrome tokens separate from document-controlled keyboard, page, legend, and effect colors.",
+        "body": "Keep interface materials separate from authored keyboard, canvas, legend, and effect values. Chrome and studio wallpaper never enter portable designs.",
         "section": "colors"
+      },
+      {
+        "name": "The Two Type Domains Rule",
+        "body": "Use Manrope for interface chrome. Keyboard legends retain the selectable authored font; do not export the interface font as a design setting.",
+        "section": "typography"
+      },
+      {
+        "name": "The Material Depth Rule",
+        "body": "Use diffuse cast shadows, fine luminous rims, and backdrop blur for glass. Reserve keycap displacement for actual input feedback.",
+        "section": "elevation"
       }
     ],
     "dos": [
-      "Do keep expressive color and material on the keyboard while using quiet chrome around it.",
-      "Do preserve physical keyboard geometry and provide visible controls when it overflows.",
-      "Do retain the independent light/dark focus treatment and explicit selection text or marks.",
-      "Do honor reduced motion and show editing, save, and error states with readable text."
+      "Do use the shared semantic tokens and reusable controls on both the studio and design-system page.",
+      "Do preserve physical keyboard proportions and expose scrolling when the board overflows.",
+      "Do retain visible focus, explicit selection marks, save/error text, and reduced-motion behavior.",
+      "Do derive preset previews from the actual editable presets."
     ],
     "donts": [
-      "Don't replace editable keyboard values with fixed chrome tokens.",
-      "Don't use color alone to distinguish selected keys.",
-      "Don't add remote UI fonts or image dependencies to the existing system-font chrome."
+      "Don't merge authored colors, fonts, or geometry into editor chrome.",
+      "Don't replace continuous inspectors with a grid of decorative cards.",
+      "Don't add marketing eyebrows or decorative numbered section prefixes.",
+      "Don't describe the input-driven listening bars as an audio analyzer."
     ]
   }
 }

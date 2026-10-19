@@ -18,13 +18,13 @@ export function preset(index = 0): Design {
     layout: '60',
     language: 'en',
     appearance: {
-      cap: '#d9d4c9',
-      ink: '#292c30',
-      board: '#34383d',
-      page: '#292d32',
-      accent: '#f3bc69',
+      cap: '#403b43',
+      ink: '#f5eff4',
+      board: '#242127',
+      page: '#28242d',
+      accent: '#e7b6c8',
       font: 'sans',
-      radius: 7,
+      radius: 9,
       gap: 6,
     },
     keys: {},
@@ -36,7 +36,7 @@ export function preset(index = 0): Design {
     background: null,
   }
   for (const code of ['Escape', 'Enter', 'CapsLock'])
-    d.keys[code] = { cap: '#edb66a', ink: '#302416' }
+    d.keys[code] = { cap: '#e7b6c8', ink: '#372732' }
   if (index === 1) {
     d.appearance = {
       ...d.appearance,

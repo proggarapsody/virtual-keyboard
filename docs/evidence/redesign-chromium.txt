@@ -1,0 +1,49 @@
+
+> keyboard-artist@0.0.0 test:e2e
+> playwright test --project=chromium
+
+[WebServer] (node:64391) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 32 tests using 3 workers
+
+(node:64404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64403) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64402) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [chromium] › e2e/appearance.spec.ts:2:1 › per-key inheritance, decorative text, undo, and reload (983ms)
+  ✓   4 [chromium] › e2e/appearance.spec.ts:27:1 › fresh presets preserve previous work; library deletion is confirmed (578ms)
+  ✓   1 [chromium] › e2e/browser-contracts.spec.ts:3:1 › user activated audio and transactional blob recovery (1.9s)
+  ✓   5 [chromium] › e2e/appearance.spec.ts:48:1 › mixed selection, selected sound inheritance and undo remain isolated across designs (949ms)
+  ✓   3 [chromium] › e2e/accessibility.spec.ts:4:1 › preset editor and mobile player have no automated accessibility violations (2.9s)
+  ✓   6 [chromium] › e2e/environment.spec.ts:3:1 › records browser storage environment without claiming feature acceptance (1.1s)
+  ✓   7 [chromium] › e2e/appearance.spec.ts:83:1 › each included preset remains editable and restores after reload (1.0s)
+  ✓   9 [chromium] › e2e/input.spec.ts:2:1 › edit selection, chosen-language typing, source cancellation and temporary scratchpad (714ms)
+  ✓  10 [chromium] › e2e/appearance.spec.ts:102:1 › long design names and literal legends stay within their surfaces (409ms)
+  ✓  11 [chromium] › e2e/input.spec.ts:33:1 › toolbar activation does not type; Tab exits and text undo remains native (316ms)
+  ✓  12 [chromium] › e2e/layouts.spec.ts:2:1 › hidden key overrides persist across layouts and EN/RU changes (688ms)
+  ✓  13 [chromium] › e2e/input.spec.ts:48:1 › synthetic composition boundary and virtual hold repeat preserve one input lifecycle (1.2s)
+  ✓   8 [chromium] › e2e/accessibility.spec.ts:43:1 › rendered desktop/mobile/zoom/reduced-motion evidence (2.4s)
+  ✓  15 [chromium] › e2e/input.spec.ts:73:1 › virtual Tab advances focus without inserting text (454ms)
+  ✓  14 [chromium] › e2e/media.spec.ts:4:1 › uploads, trims, saves and exports self-contained media into a new context (1.7s)
+  ✓  17 [chromium] › e2e/mobile.spec.ts:2:1 › simulated simultaneous touches hold Shift and type, with cancellation cleanup (789ms)
+  ✓  16 [chromium] › e2e/accessibility.spec.ts:91:1 › design system uses live components and reflows without accessibility violations (1.5s)
+  ✓  18 [chromium] › e2e/media.spec.ts:63:1 › invalid image/audio/import keeps current work and exports remain available (352ms)
+  ✓  21 [chromium] › e2e/media.spec.ts:89:1 › real Web Audio creates one press/release for repeats and concurrent sources (736ms)
+  ✓  20 [chromium] › e2e/recovery.spec.ts:4:1 › a stale tab preserves both versions and keeps unsaved export usable (1.1s)
+  ✓  22 [chromium] › e2e/media.spec.ts:146:1 › editing and export work with networking disabled after load (395ms)
+  ✓  23 [chromium] › e2e/recovery.spec.ts:36:1 › quota failure retains edited appearance and exportable media (370ms)
+  ✓  24 [chromium] › e2e/media.spec.ts:166:1 › media boundary rejections preserve the active image and sound (730ms)
+  ✓  25 [chromium] › e2e/recovery.spec.ts:64:1 › unsupported versions and failed replacement preserve existing documents (632ms)
+  ✓  26 [chromium] › e2e/media.spec.ts:223:1 › background positioning and media undo restore the prior design (692ms)
+  ✓  27 [chromium] › e2e/recovery.spec.ts:95:1 › edits during a delayed save serialize and restore the latest snapshot (733ms)
+  ✓  28 [chromium] › e2e/media.spec.ts:257:1 › supported compressed sources decode before assignment (375ms)
+  ✓  19 [chromium] › e2e/performance.spec.ts:4:1 › records cold navigations and warm chord timing as lab evidence (3.6s)
+  ✓  30 [chromium] › e2e/media.spec.ts:274:1 › inherited sample pools avoid immediate repeats across different keys (561ms)
+  ✓  29 [chromium] › e2e/recovery.spec.ts:123:1 › storage rejection during explicit replacement leaves the target unchanged (672ms)
+  ✓  31 [chromium] › e2e/smoke.spec.ts:2:1 › application loads a usable surface (271ms)
+  ✓  32 [chromium] › e2e/recovery.spec.ts:163:1 › unavailable storage on startup leaves media exportable in memory (361ms)
+
+  32 passed (12.3s)

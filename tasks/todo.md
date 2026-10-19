@@ -293,3 +293,16 @@ Next unfinished acceptance task is T06's real OS text-input check. Continue with
 Preview: https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/.
 
 19 of 24 task acceptance boxes are closed. T06/T13/T21/T22/T23 remain open for the unavailable real OS input, audible playback, Firefox, physical touch and assistive-technology evidence listed above. All planned implementation slices have been exercised; no scope interview or production replacement is pending/authorized. T24’s isolated review publication is complete despite the remaining production acceptance gates.
+
+## Reference-led redesign — 2026-10-20
+
+User requested replacement UI from the two supplied smoked-glass/dusk references, plus a design system. Product discovery remains closed.
+
+- [x] Replace graphite chrome with reference-led glass workspace, tactile key surfaces, floating panels, listening dock and actual preset previews.
+- [x] Extract semantic color/material/shape/spacing/motion foundations and shared Button/Icon primitives; ship a live `design-system.html` reference page.
+- [x] Preserve stored designs and all existing editing/media/portable behavior; change only newly-created Tactile palette defaults.
+- [x] Verify Svelte checks/build, 12 rule tests, 32 Chromium and 27 selected WebKit cases; zero axe violations in covered app/system states.
+- [x] Complete fresh visual finish review and reconcile DESIGN.md/sidecar. Reviewer scored all three required corrections resolved (`docs/design/finish-review-redesign.md`).
+- [ ] Publish and verify the isolated preview, preserving original root site.
+
+Evidence: `docs/VALIDATION.md` redesign section. The five open original acceptance tasks above remain open; redesign does not supply missing device evidence.

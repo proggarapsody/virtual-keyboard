@@ -54,3 +54,19 @@ Rendered captures are in `.impeccable/review/`, including desktop/mobile, 768/10
 Implementation is present for all 24 tasks. Continue with unchecked acceptance items in `tasks/todo.md`: real audio/device/assistive-technology checks, Firefox environment verification, and the complete three-engine audible round trip. Do not restart discovery or silently mark these unavailable checks passed.
 
 Final published Chromium lab run: p95 scheduling 0.70 ms; p95 next-frame observation 16.80 ms. Three fresh-context FCP observations: 116, 124, 120 ms (unthrottled automation; not field data).
+
+## Reference-led redesign — 2026-10-20
+
+The two user-supplied references replace the previous graphite visual direction. The redesign changes application chrome and new-preset defaults; existing stored designs and portable package contracts remain intact. No original-site replacement is authorized.
+
+- Local Chromium: **32/32 pass** (`evidence/redesign-chromium.txt`). Local WebKit: **27/27 selected cases pass** (`evidence/redesign-webkit.txt`), with the same five unsupported audio/performance/CDP cases excluded. The additional case checks the live design-system page, interactive toggle, reflow and axe at desktop/mobile widths.
+- Axe: zero violations for all three preset editor states, narrow player, and live design-system page in each tested engine. This is automated accessibility evidence, not screen-reader or physical device certification.
+- Svelte check: zero errors/warnings; production multipage build passes. Svelte autofixer reports no issues in changed components; existing native-dialog `bind:this` suggestion retained intentionally. Full output: `evidence/redesign-svelte-autofixer.txt`.
+- Visual captures: `.impeccable/review/` contains desktop 1440, mobile 320, 768/1024, full-size board, Play, and design-system desktop/mobile. Fixed wallpaper captures outside the original 900px viewport can show screenshot-only paint discontinuity; this does not establish a scrolling/device result.
+- Design detector ran once on changed targets: 77 advisory mismatches against the superseded DESIGN.md (12 color, 46 font-size, 19 radius), zero non-advisory findings. Raw output: `design/detector-redesign.json`. Reconciliation follows the finish review; no clean-detector rerun is claimed.
+- Current build adds a 19.7 kB wallpaper and locally served Manrope font subsets; these are application chrome and are excluded from design exports. JavaScript/CSS bundle measurements in the earlier section belong to the earlier build. Current `dist/` output is the build evidence; no field-performance improvement is claimed.
+- All prior T06/T13/T21/T22/T23 physical IME/clipboard, actual audible playback, Firefox runtime, touch/zoom and assistive-technology gaps remain open.
+
+Post-review checks: the six Chromium/WebKit visual/accessibility cases pass after the showcase typography/label corrections (`evidence/redesign-final-visual.txt`). A focused real Chromium Web Audio regression also verifies dock bar heights during a held key, release and muted hold (`evidence/redesign-dock.txt`); this proves input-linked visual feedback and scheduling behavior, not audible output or a waveform analyzer.
+
+Fresh visual reviewer disposition: **ship for the three scored corrections** (persistence, removed decorative labels, title tracking), with all eight rewritten captures valid and no visible fix-batch regression. The documenter validated source-backed DESIGN.md tokens and `.impeccable/design.json` metadata/reference/narrative consistency. Reports: `design/finish-review-redesign.md`, `design/implementation-review.md`. This is not a new whole-surface acceptance certification.

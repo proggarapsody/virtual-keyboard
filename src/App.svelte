@@ -9,6 +9,9 @@
   import SoundInspector from './lib/studio/SoundInspector.svelte'
   import Player from './lib/studio/Player.svelte'
   import TransferControls from './lib/studio/TransferControls.svelte'
+  import StudioHeader from './lib/studio/StudioHeader.svelte'
+  import PresetShelf from './lib/studio/PresetShelf.svelte'
+  import Icon from './lib/ui/Icon.svelte'
   import AudioControls from './lib/studio/AudioControls.svelte'
   import Keyboard from './lib/studio/Keyboard.svelte'
   import Scratchpad from './lib/studio/Scratchpad.svelte'
@@ -107,35 +110,13 @@
   }}
 />
 <div class={['studio', { playing: studio.mode === 'play' }]}>
-  <header>
-    <a class="brand" href="./">{m.brand}<span>{m.tagline}</span></a>
-    <div class="toolbar">
-      <span role="status">{studio.saveStatus}</span><button
-        onclick={() => studio.undo()}
-        disabled={!studio.historyVersion || !studio.history.canUndo}
-        >Undo</button
-      ><button
-        onclick={() => studio.undo(true)}
-        disabled={!studio.historyVersion || !studio.history.canRedo}
-        >Redo</button
-      ><button class="primary" onclick={() => studio.setMode()}
-        >{studio.mode === 'edit' ? m.play : m.exit}</button
-      >
-    </div>
-    <AudioControls
-      state={studio.audioState}
-      volume={studio.volume}
-      muted={studio.muted}
-      enable={() => void studio.enableSound()}
-      listen={(volume, muted) => studio.listen(volume, muted)}
-    />
-  </header>
+  <StudioHeader {studio} />
   {#if studio.error}<div role="alert" class="error">
       {studio.error}<button onclick={() => void studio.exportFile()}
         >Export backup</button
       ><button onclick={() => (studio.error = '')}>Dismiss</button>
     </div>{/if}
-  <aside class="library" aria-label="Design library">
+  <aside class="library glass-panel" aria-label="Design library">
     <DesignLibrary
       design={studio.design}
       designs={studio.designs}
@@ -152,56 +133,76 @@
   </aside>
   <main>
     <Player {studio} />
-    <div class="canvas-heading">
-      <div>
-        <h1>{studio.design.name}</h1>
-        <p>{studio.mode === 'edit' ? m.editHint : m.playHint}</p>
+    <section class="workbench glass-panel">
+      <div class="canvas-heading">
+        <div>
+          <h1>{studio.design.name}</h1>
+          <p>{studio.mode === 'edit' ? m.editHint : m.playHint}</p>
+        </div>
+        <label
+          ><span>Language</span><select
+            aria-label="Language"
+            value={studio.design.language}
+            onchange={(e) => {
+              studio.cancel()
+              studio.change(
+                (d) => (d.language = e.currentTarget.value as 'en' | 'ru'),
+              )
+            }}
+            ><option value="en">English</option><option value="ru"
+              >Русский</option
+            ></select
+          ></label
+        >
       </div>
-      <label
-        ><span>Language</span><select
-          aria-label="Language"
-          value={studio.design.language}
-          onchange={(e) => {
-            studio.cancel()
-            studio.change(
-              (d) => (d.language = e.currentTarget.value as 'en' | 'ru'),
-            )
-          }}
-          ><option value="en">English</option><option value="ru">Русский</option
-          ></select
-        ></label
+      <section
+        class="canvas"
+        style:background={studio.design.appearance.page}
+        aria-label="Design preview"
       >
-    </div>
-    <section
-      class="canvas"
-      style:background={studio.design.appearance.page}
-      aria-label="Design preview"
-    >
-      {#if studio.design.background}<div
-          class="canvas-background"
-          style:background-image={`url("${studio.assetUrl(studio.design.background.asset)}")`}
-          style:background-size={studio.design.background.fit}
-          style:background-position={`${studio.design.background.x}% ${studio.design.background.y}%`}
-          style:opacity={1 - studio.design.background.dim}
-        ></div>{/if}<Keyboard {studio} {typeKey} />
+        {#if studio.design.background}<div
+            class="canvas-background"
+            style:background-image={`url("${studio.assetUrl(studio.design.background.asset)}")`}
+            style:background-size={studio.design.background.fit}
+            style:background-position={`${studio.design.background.x}% ${studio.design.background.y}%`}
+            style:opacity={1 - studio.design.background.dim}
+          ></div>{/if}<Keyboard {studio} {typeKey} />
+      </section>
+      <AudioControls
+        state={studio.audioState}
+        volume={studio.volume}
+        muted={studio.muted}
+        enable={() => void studio.enableSound()}
+        listen={(volume, muted) => studio.listen(volume, muted)}
+        active={studio.pressed.length > 0}
+      />
+      <div class="canvas-footer">
+        <span
+          >{studio.design.layout === 'full'
+            ? 'Full-size'
+            : `${studio.design.layout}%`} ANSI · {studio.mode === 'edit'
+            ? `${studio.selection.length} selected`
+            : 'Play mode'}</span
+        ><button onclick={() => (studio.showScratch = !studio.showScratch)}
+          >{studio.showScratch ? m.hideScratchpad : m.showScratchpad}</button
+        >
+      </div>
     </section>
-    <div class="canvas-footer">
-      <span
-        >{studio.design.layout}% ANSI · {studio.mode === 'edit'
-          ? `${studio.selection.length} selected`
-          : 'Play mode'}</span
-      ><button onclick={() => (studio.showScratch = !studio.showScratch)}
-        >{studio.showScratch ? m.hideScratchpad : m.showScratchpad}</button
-      >
-    </div>
+    {#if studio.mode === 'edit'}<PresetShelf
+        create={(i) => void studio.create(i)}
+        disabled={studio.mediaBusy}
+      />{/if}
     {#if studio.showScratch}<Scratchpad
         {studio}
         setElement={(node) => (scratch = node)}
       />{/if}
   </main>
-  <aside class="inspector" aria-label="Design inspector">
-    <h2>Design settings</h2>
-    <p>Customize the whole keyboard or select individual keys.</p>
+  <aside class="inspector glass-panel" aria-label="Design inspector">
+    <div class="panel-heading">
+      <span class="panel-icon"><Icon name="sliders" size={18} /></span>
+      <h2>Make it yours</h2>
+    </div>
+    <p class="panel-description">Small details. Your signature.</p>
     <label
       ><span>Layout</span><select
         aria-label="Layout"

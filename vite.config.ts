@@ -5,4 +5,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [svelte()],
   base: './',
+  build: {
+    rolldownOptions: {
+      input: { app: 'index.html', 'design-system': 'design-system.html' },
+    },
+  },
 })

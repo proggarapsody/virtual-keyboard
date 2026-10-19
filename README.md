@@ -42,3 +42,7 @@ No accounts, backend, telemetry, service worker or guaranteed offline reopening.
 - [Asset provenance](docs/ASSETS.md)
 
 Legacy source remains on `origin/dev`; production is on `origin/gh-pages`. The implementation branch is `feature/keyboard-artist-v1`.
+
+## Interface system
+
+The reference-led dusk/glass UI is documented in `DESIGN.md`. Shared foundations live in `src/styles/tokens.css` and `primitives.css`; keyboard geometry/effects stay in `keyboard.css`, separate from authored document values. `src/lib/ui/` supplies shared controls/icons. Run the app and open `/design-system.html` for the live palette, type, controls, states and preset examples. See `docs/design/REDESIGN.md` for reference provenance and `docs/ASSETS.md` for artwork/font licensing.

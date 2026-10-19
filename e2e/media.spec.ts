@@ -112,10 +112,18 @@ test('real Web Audio creates one press/release for repeats and concurrent source
   await page.getByRole('button', { name: 'Play keyboard' }).click()
   await page.getByRole('textbox', { name: 'Scratchpad' }).focus()
   await page.keyboard.down('KeyA')
+  await expect(page.locator('.audio-wave i').first()).toHaveCSS(
+    'height',
+    '23px',
+  )
   await page.keyboard.down('KeyA')
   await page.keyboard.down('KeyB')
   await page.keyboard.up('KeyA')
   await page.keyboard.up('KeyB')
+  await expect(page.locator('.audio-wave i').first()).toHaveCSS(
+    'height',
+    '13px',
+  )
   await expect
     .poll(() =>
       page.evaluate(
@@ -134,7 +142,12 @@ test('real Web Audio creates one press/release for repeats and concurrent source
   ).toEqual([2, 2, 1, 1])
   await page.getByRole('button', { name: 'Mute', exact: true }).click()
   await page.getByRole('textbox', { name: 'Scratchpad' }).focus()
-  await page.keyboard.press('KeyC')
+  await page.keyboard.down('KeyC')
+  await expect(page.locator('.audio-wave i').first()).toHaveCSS(
+    'height',
+    '13px',
+  )
+  await page.keyboard.up('KeyC')
   expect(
     await page.evaluate(
       () =>
@@ -290,7 +303,7 @@ test('inherited sample pools avoid immediate repeats across different keys', asy
   })
   await page.goto('./')
   await expect(page.getByRole('status')).toHaveText('Saved')
-  await page.getByRole('button', { name: 'Color study', exact: true }).click()
+  await page.getByRole('button', { name: /Color study/ }).click()
   await expect(page.locator('h1')).toHaveText('Color study')
   await page.getByRole('button', { name: 'Enable sound', exact: true }).click()
   await expect(

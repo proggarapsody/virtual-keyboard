@@ -1,0 +1,7 @@
+{
+  "kind": "generated-original",
+  "tool": "image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: a wide background wallpaper for a smoked-glass keyboard design studio. Create an original quiet cinematic dusk landscape: distant dark craggy mountain silhouettes in the lower third, hazy rose and mauve sky fading into muted lavender blue, a soft warm peach glow on the left. Very low visual detail in the top two thirds, gentle atmospheric softness, tranquil and sophisticated, almost like a softly defocused desktop wallpaper. Photographic, subtle natural light, landscape 16:9. This will sit behind dark translucent interface panels; keep it subdued, no bright hotspots. No interface, no keyboards, no objects, no people, no text, no symbols, no logos or watermarks.",
+  "approved_ui_comp": false,
+  "usage": "Application chrome only; never exported with a design."
+}
