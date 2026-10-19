@@ -10,7 +10,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T01 — Define the studio's visual execution
 
-- [ ] Complete T01. Requirements: P01, P05, P17, P19.
+- [x] Complete T01. Requirements: P01, P05, P17, P19.
 - Acceptance: retain the dark three-column editor and expressive keyboard; document tokens, typography, focus, component states, and a mobile player composition from the confirmed brief; settle the concrete design with the user through the installed design workflow before UI construction.
 - Verify: compare references/sketches to the approved scope; verify real EN/RU labels, mixed selection, unsaved states, and usable full-size keyboard composition. Do not reopen product decisions.
 - Depends on: none.
@@ -18,7 +18,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T02 — Establish behavior-test infrastructure
 
-- [ ] Complete T02. Requirements: all verification foundations.
+- [x] Complete T02. Requirements: all verification foundations.
 - Acceptance: add compatible Vitest and Playwright scripts/configuration; prove a meaningful starter-load browser check and document the exact commands; keep runtime application dependencies unchanged here.
 - Verify: `npm run test:e2e -- --project=chromium`, `npm run check`, and `npm run build`; exercise one real test rather than using empty-suite success as coverage. Add the first rule test with T04 before requiring the unit-test gate.
 - Depends on: none.
@@ -245,3 +245,10 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 **Checkpoint M7 / v1 candidate**
 
 - [ ] Every P01–P20 requirement has passing evidence; no hidden incomplete task is labeled finished. Preview and release report are ready for user review. Production replacement remains a separate explicit approval.
+
+## Execution evidence — 2026-10-20
+
+- Baseline: clean tree at c3ed0aa; implementation branch `feature/keyboard-artist-v1`.
+- T01: `DESIGN.md` and studio brief derive concrete tokens/composition from the confirmed brief; user authorized inferred ordinary choices and no repeated design discovery. Render verification follows the first UI slice.
+- T02: Vitest/Playwright installed; Chromium starter smoke passes; Svelte check/build pass. Firefox/WebKit downloads in progress; first all-browser attempt reports missing binaries, not passing coverage.
+- T03 in progress: Chromium measurements in `docs/evidence/experiment-chromium.json`; aborted transaction retained the original 32 MiB blob. No physical audio/touch verification yet.

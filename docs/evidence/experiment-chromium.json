@@ -1,0 +1,29 @@
+{
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+  "measurements": [
+    {
+      "seconds": 1,
+      "encoded": 176444,
+      "decoded": 384000,
+      "decodeMs": 7.5999999940395355
+    },
+    {
+      "seconds": 10,
+      "encoded": 1764044,
+      "decoded": 3840000,
+      "decodeMs": 9.300000011920929
+    },
+    {
+      "seconds": 30,
+      "encoded": 5292044,
+      "decoded": 11520000,
+      "decodeMs": 25.599999994039536
+    }
+  ],
+  "chordMs": 0.5999999940395355,
+  "storageMs": 7.5,
+  "aborted": true,
+  "retained": true,
+  "malformedRejected": true,
+  "audioState": "running"
+}
