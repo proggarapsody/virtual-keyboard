@@ -303,6 +303,6 @@ User requested replacement UI from the two supplied smoked-glass/dusk references
 - [x] Preserve stored designs and all existing editing/media/portable behavior; change only newly-created Tactile palette defaults.
 - [x] Verify Svelte checks/build, 12 rule tests, 32 Chromium and 27 selected WebKit cases; zero axe violations in covered app/system states.
 - [x] Complete fresh visual finish review and reconcile DESIGN.md/sidecar. Reviewer scored all three required corrections resolved (`docs/design/finish-review-redesign.md`).
-- [ ] Publish and verify the isolated preview, preserving original root site.
+- [x] Publish and verify the isolated preview, preserving original root site. Runtime `beb5abd`, Pages `88d68ad`; public browser and before/after root-hash evidence in docs/RELEASE.md.
 
 Evidence: `docs/VALIDATION.md` redesign section. The five open original acceptance tasks above remain open; redesign does not supply missing device evidence.

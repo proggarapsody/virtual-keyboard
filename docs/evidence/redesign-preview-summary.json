@@ -1,0 +1,12 @@
+{
+  "chromium": {
+    "passed": 30,
+    "skipped": 2,
+    "failed": 0
+  },
+  "webkit": {
+    "passed": 26,
+    "skipped": 1,
+    "failed": 0
+  }
+}

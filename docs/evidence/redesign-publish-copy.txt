@@ -1,0 +1,1 @@
+2026-10-20: disposable rsync fixture; source and target build.json had equal byte lengths and identical mtimes. Source contained new-revision, target old-revision. Running rsync -ac --delete replaced target with new-revision; assertion passed. The preview publisher now uses this checksum mode. bash -n scripts/publish-preview.sh passes.

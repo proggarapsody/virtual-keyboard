@@ -1,0 +1,11 @@
+### Result
+{
+  "name": "Tactile mechanical",
+  "cap": "#d9d4c9",
+  "radius": "7",
+  "chrome": "\"Manrope Variable\", sans-serif"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({ name: document.querySelector("input[aria-label=\\"Design name\\"]").value, cap: document.querySelector("input[aria-label=\\"Key color\\"]").value, radius: document.querySelector("input[type=range][max=\\"20\\"]").value, chrome: getComputedStyle(document.body).fontFamily })');
+```

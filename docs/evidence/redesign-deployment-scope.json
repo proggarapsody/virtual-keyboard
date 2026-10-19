@@ -1,0 +1,27 @@
+{
+  "previousPagesCommit": "a612f3a",
+  "redesignPagesCommit": "88d68ad",
+  "runtimeSourceCommit": "beb5abd",
+  "changedPathCount": 17,
+  "allChangedPathsInPreview": true,
+  "changedPaths": [
+    "keyboard-artist-preview/assets/PresetPreview-DP81oh6Z.css",
+    "keyboard-artist-preview/assets/PresetPreview-DbyAm-r9.js",
+    "keyboard-artist-preview/assets/app-yYOwIXMg.js",
+    "keyboard-artist-preview/assets/design-system-B4PItHeq.css",
+    "keyboard-artist-preview/assets/design-system-CTZ47Q4X.js",
+    "keyboard-artist-preview/assets/index-CE7s9K0U.js",
+    "keyboard-artist-preview/assets/index-DWJdVbXs.css",
+    "keyboard-artist-preview/assets/manrope-cyrillic-wght-normal-Dvxsihut.woff2",
+    "keyboard-artist-preview/assets/manrope-greek-wght-normal-DL7QRZyv.woff2",
+    "keyboard-artist-preview/assets/manrope-latin-ext-wght-normal-Ch3YOpNY.woff2",
+    "keyboard-artist-preview/assets/manrope-latin-wght-normal-DHIcAJRg.woff2",
+    "keyboard-artist-preview/assets/manrope-vietnamese-wght-normal-usUDDRr7.woff2",
+    "keyboard-artist-preview/assets/studio-dusk-CA8AOcHM.webp",
+    "keyboard-artist-preview/build.json",
+    "keyboard-artist-preview/design-system.html",
+    "keyboard-artist-preview/index.html",
+    "keyboard-artist-preview/manrope-license.txt"
+  ],
+  "originalRootHtmlSha256Before": "401a8b644031ac85395b6b2bfdbf18986b76ee6c36339af07ab16f5389c440c0"
+}

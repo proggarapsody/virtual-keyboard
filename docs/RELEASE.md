@@ -2,7 +2,7 @@
 
 ## Reference-led redesign (2026-10-20)
 
-Application revision: `1b83b2f`. Scoped Pages deployment: `2158064`. Review URL remains https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/. Live design-system page: https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/design-system.html. This update replaces review chrome only; original root site remains protected by the scoped publish script. Final public checks are recorded below after deployment.
+Runtime source revision: `beb5abd63c2fe184aaabd29ef95c5be641527575` (UI increment `1b83b2f`). Scoped Pages deployment: `88d68adbf767d2be6f009a7d687745759e6a3325`. Review URL remains https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/. Live design-system page: https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/design-system.html. This update replaces review chrome only; original root site remains protected by the scoped publish script. The exact runtime marker is served by `build.json`; the Pages build/deploy run completed successfully. Final public checks are recorded below.
 
 ## Earlier v1 preview checkpoint
 
@@ -41,3 +41,12 @@ The final preview update fixes shared variation history for inherited sample poo
 ### Publication copy fix
 
 The first redesign deployment exposed rsync's size/mtime quick-check: the checked-out old `build.json` and freshly generated marker had the same size and timestamp second, so the marker was skipped. Publishing now uses `rsync -ac --delete` to compare file contents. A disposable same-size/same-timestamp old/new fixture verifies replacement. The first redesign Pages commit `2158064` is superseded by the checksum-verified publication below.
+
+### Redesign public verification
+
+- Pages run [39288685087](https://github.com/proggarapsody/virtual-keyboard/actions/runs/39288685087) completed successfully for `88d68ad`; public `build.json` reports exact runtime source `beb5abd63c2fe184aaabd29ef95c5be641527575`.
+- Public Chromium: **30 pass, 2 development-only skips**. Public WebKit: **26 pass, 1 development-only skip**, with the same five unsupported audio/performance/CDP cases excluded. These cover the new live system page as well as existing app flows. Reports: `evidence/redesign-preview-common-results.json`, `redesign-preview-chromium-audio-results.json`, `redesign-preview-summary.json`.
+- A persistent real Chromium session loaded the previous deployed UI, saved its default design, then reloaded the redesign: the authored cap color `#d9d4c9` and radius `7` survived while chrome changed to Manrope. Before/after DOM evidence: `redesign-existing-before.txt`, `redesign-existing-after.txt`. The new Tactile preset has independent dark/rose defaults. No user storage was migrated or overwritten by chrome styling.
+- Console check after reload: zero messages/errors/warnings. Original root HTML SHA-256 before and after remains `401a8b644031ac85395b6b2bfdbf18986b76ee6c36339af07ab16f5389c440c0`. Git also verifies every original Pages path is identical; all 17 changed paths are scoped to the preview (`redesign-deployment-scope.json`).
+- Current `performance.json`/trace contain public-preview Chromium lab measurements; `redesign-local-performance.json` preserves the preceding local run. No field performance or actual listening claim is made.
+- The cancelled first redesign run and transient legacy Pages build-status errors were superseded by the successful Actions deployment and exact public revision check. Preview remains separate from the original site, with no production promotion.
