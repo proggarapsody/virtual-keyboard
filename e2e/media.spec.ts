@@ -270,3 +270,41 @@ test('supported compressed sources decode before assignment', async ({
     await expect(page.getByRole('status')).toHaveText('Saved')
   }
 })
+
+test('inherited sample pools avoid immediate repeats across different keys', async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    Math.random = () => 0
+    const original = AudioBufferSourceNode.prototype.start
+    const samples: string[] = []
+    Object.assign(window, { sampledBuffers: samples })
+    AudioBufferSourceNode.prototype.start = function (
+      ...args: Parameters<typeof original>
+    ) {
+      samples.push(
+        Array.from(this.buffer!.getChannelData(0).slice(0, 8)).join(','),
+      )
+      return original.apply(this, args)
+    }
+  })
+  await page.goto('./')
+  await expect(page.getByRole('status')).toHaveText('Saved')
+  await page.getByRole('button', { name: 'Color study', exact: true }).click()
+  await expect(page.locator('h1')).toHaveText('Color study')
+  await page.getByRole('button', { name: 'Enable sound', exact: true }).click()
+  await expect(
+    page.getByRole('button', { name: 'Sound enabled', exact: true }),
+  ).toBeVisible()
+  await page.getByRole('button', { name: 'Play keyboard' }).click()
+  await page.getByRole('textbox', { name: 'Scratchpad' }).focus()
+  await page.keyboard.down('KeyA')
+  await page.keyboard.down('KeyB')
+  const buffers = await page.evaluate(
+    () => (window as unknown as { sampledBuffers: string[] }).sampledBuffers,
+  )
+  expect(buffers).toHaveLength(2)
+  expect(buffers[0]).not.toBe(buffers[1])
+  await page.keyboard.up('KeyA')
+  await page.keyboard.up('KeyB')
+})

@@ -114,3 +114,11 @@ export function assetIds(d: Design) {
     ]),
   ]
 }
+
+export function soundIdentity(
+  d: Design,
+  code: string,
+  phase: 'press' | 'release',
+) {
+  return `${d.id}:${d.keys[code]?.[phase] ? code : 'global'}:${phase}`
+}

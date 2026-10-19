@@ -8,6 +8,7 @@ import {
   assetIds,
   designSchema,
   resolveSound,
+  soundIdentity,
   type Design,
   type Asset,
   type Assignment,
@@ -41,7 +42,7 @@ export class Artist extends Studio {
     this.onSound = (code, phase) =>
       this.audio.play(
         resolveSound(this.design, code, phase),
-        `${code}:${phase}`,
+        soundIdentity(this.design, code, phase),
       )
     this.audio.onState = (state) => {
       this.audioState = state

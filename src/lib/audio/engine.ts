@@ -108,6 +108,7 @@ export class AudioEngine {
     )
   }
   stop() {
+    this.previous.clear()
     for (const voice of this.voices) {
       try {
         voice.stop()

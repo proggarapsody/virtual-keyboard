@@ -79,3 +79,18 @@ it('bounds source and aggregate decoded media, rejecting invalid trims/pools', a
   other.sound.press.pool.push({ ...other.sound.press.pool[0]! })
   expect(designSchema.safeParse(other).success).toBe(false)
 })
+
+it('shares variation history for inherited assignments and separates overrides/phases', async () => {
+  const { soundIdentity } = await import('./model')
+  const d = preset(2)
+  expect(soundIdentity(d, 'KeyA', 'press')).toBe(
+    soundIdentity(d, 'KeyB', 'press'),
+  )
+  d.keys.KeyA = { press: structuredClone(d.sound.press) }
+  expect(soundIdentity(d, 'KeyA', 'press')).not.toBe(
+    soundIdentity(d, 'KeyB', 'press'),
+  )
+  expect(soundIdentity(d, 'KeyB', 'press')).not.toBe(
+    soundIdentity(d, 'KeyB', 'release'),
+  )
+})
