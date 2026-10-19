@@ -1,0 +1,68 @@
+[
+  {
+    "repository": "https://github.com/sveltejs/ai-tools",
+    "revision": "0637f9ddb6eb3de8173dcfbfdfd88a07969ed535",
+    "skills": [
+      {
+        "name": "svelte-code-writer",
+        "path": "tools/skills/svelte-code-writer"
+      },
+      {
+        "name": "svelte-core-bestpractices",
+        "path": "tools/skills/svelte-core-bestpractices"
+      }
+    ]
+  },
+  {
+    "repository": "https://github.com/anthropics/skills",
+    "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "skills": [
+      {
+        "name": "frontend-design",
+        "path": "skills/frontend-design"
+      }
+    ]
+  },
+  {
+    "repository": "https://github.com/addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "skills": [
+      {
+        "name": "frontend-ui-engineering",
+        "path": "skills/frontend-ui-engineering"
+      },
+      {
+        "name": "spec-driven-development",
+        "path": "skills/spec-driven-development"
+      },
+      {
+        "name": "code-review-and-quality",
+        "path": "skills/code-review-and-quality"
+      }
+    ]
+  },
+  {
+    "repository": "https://github.com/addyosmani/web-quality-skills",
+    "revision": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+    "skills": [
+      {
+        "name": "performance",
+        "path": "skills/performance"
+      },
+      {
+        "name": "accessibility",
+        "path": "skills/accessibility"
+      }
+    ]
+  },
+  {
+    "repository": "https://github.com/pbakaus/impeccable",
+    "revision": "0665bd812ae0908fcab17b96fd4f840defb882d9",
+    "skills": [
+      {
+        "name": "impeccable",
+        "path": ".agents/skills/impeccable"
+      }
+    ]
+  }
+]
