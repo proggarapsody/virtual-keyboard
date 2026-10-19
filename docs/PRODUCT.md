@@ -1,6 +1,6 @@
 # Keyboard Artist — confirmed v1 scope
 
-Status: confirmed by the user on 2026-10-20 after the grilling interview (Q1–Q49). This is the product source of truth. The [implementation plan](../tasks/plan.md) contains proposed engineering choices; the [task list](../tasks/todo.md) tracks delivery. Discovery is complete. Feature implementation has not started.
+Status: confirmed by the user on 2026-10-20 after the grilling interview (Q1–Q49). This is the product source of truth. The [implementation plan](../tasks/plan.md) contains proposed engineering choices; the [task list](../tasks/todo.md) tracks delivery. Discovery is complete. The review candidate is implemented; acceptance evidence and remaining device/browser gaps are tracked in [VALIDATION.md](VALIDATION.md).
 
 ## Positioning
 
@@ -116,7 +116,7 @@ Publish a separate preview and verify create → customize → play → reload �
 
 Original repository: [proggarapsody/virtual-keyboard](https://github.com/proggarapsody/virtual-keyboard). Its `dev` branch holds the legacy vanilla JavaScript/Webpack/Sass app; `gh-pages` holds the published build. Prior inspection found EN/RU layouts, physical highlighting, virtual typing, three themes, language/theme persistence, and no audio engine.
 
-The current foundation has Svelte 5, TypeScript, Vite, and nine project-local skills. The UI is still the Vite starter. Starter checks/builds prove setup, not implementation of these requirements.
+The current foundation has Svelte 5, TypeScript, Vite, and nine project-local skills. The Vite starter has been replaced by the studio. Current checks, browser evidence and release limitations are recorded in [VALIDATION.md](VALIDATION.md).
 
 ## Remaining engineering decisions
 

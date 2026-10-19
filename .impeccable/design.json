@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T16:13:35.369726+00:00",
+  "title": "Design System: Keyboard Artist",
+  "extensions": {
+    "colorMeta": {
+      "chrome": {
+        "role": "neutral",
+        "displayName": "Chrome",
+        "tonalRamp": [
+          "oklch(15% 0.01080 260.68)",
+          "oklch(26% 0.01080 260.68)",
+          "oklch(38% 0.01080 260.68)",
+          "oklch(49% 0.01080 260.68)",
+          "oklch(61% 0.01080 260.68)",
+          "oklch(72% 0.01080 260.68)",
+          "oklch(84% 0.01080 260.68)",
+          "oklch(95% 0.01080 260.68)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01442 261.67)",
+          "oklch(26% 0.01442 261.67)",
+          "oklch(38% 0.01442 261.67)",
+          "oklch(49% 0.01442 261.67)",
+          "oklch(61% 0.01442 261.67)",
+          "oklch(72% 0.01442 261.67)",
+          "oklch(84% 0.01442 261.67)",
+          "oklch(95% 0.01442 261.67)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(15% 0.02098 259.40)",
+          "oklch(26% 0.02098 259.40)",
+          "oklch(38% 0.02098 259.40)",
+          "oklch(49% 0.02098 259.40)",
+          "oklch(61% 0.02098 259.40)",
+          "oklch(72% 0.02098 259.40)",
+          "oklch(84% 0.02098 259.40)",
+          "oklch(95% 0.02098 259.40)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.00343 247.86)",
+          "oklch(26% 0.00343 247.86)",
+          "oklch(38% 0.00343 247.86)",
+          "oklch(49% 0.00343 247.86)",
+          "oklch(61% 0.00343 247.86)",
+          "oklch(72% 0.00343 247.86)",
+          "oklch(84% 0.00343 247.86)",
+          "oklch(95% 0.00343 247.86)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.01971 255.55)",
+          "oklch(26% 0.01971 255.55)",
+          "oklch(38% 0.01971 255.55)",
+          "oklch(49% 0.01971 255.55)",
+          "oklch(61% 0.01971 255.55)",
+          "oklch(72% 0.01971 255.55)",
+          "oklch(84% 0.01971 255.55)",
+          "oklch(95% 0.01971 255.55)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Action",
+        "tonalRamp": [
+          "oklch(15% 0.08474 261.73)",
+          "oklch(26% 0.08474 261.73)",
+          "oklch(38% 0.08474 261.73)",
+          "oklch(49% 0.08474 261.73)",
+          "oklch(61% 0.08474 261.73)",
+          "oklch(72% 0.08474 261.73)",
+          "oklch(84% 0.08474 261.73)",
+          "oklch(95% 0.08474 261.73)"
+        ]
+      },
+      "control": {
+        "role": "neutral",
+        "displayName": "Control",
+        "tonalRamp": [
+          "oklch(15% 0.01780 262.23)",
+          "oklch(26% 0.01780 262.23)",
+          "oklch(38% 0.01780 262.23)",
+          "oklch(49% 0.01780 262.23)",
+          "oklch(61% 0.01780 262.23)",
+          "oklch(72% 0.01780 262.23)",
+          "oklch(84% 0.01780 262.23)",
+          "oklch(95% 0.01780 262.23)"
+        ]
+      },
+      "control-hover": {
+        "role": "neutral",
+        "displayName": "Control Hover",
+        "tonalRamp": [
+          "oklch(15% 0.02126 259.40)",
+          "oklch(26% 0.02126 259.40)",
+          "oklch(38% 0.02126 259.40)",
+          "oklch(49% 0.02126 259.40)",
+          "oklch(61% 0.02126 259.40)",
+          "oklch(72% 0.02126 259.40)",
+          "oklch(84% 0.02126 259.40)",
+          "oklch(95% 0.02126 259.40)"
+        ]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "tonalRamp": [
+          "oklch(15% 0.07215 264.08)",
+          "oklch(26% 0.07215 264.08)",
+          "oklch(38% 0.07215 264.08)",
+          "oklch(49% 0.07215 264.08)",
+          "oklch(61% 0.07215 264.08)",
+          "oklch(72% 0.07215 264.08)",
+          "oklch(84% 0.07215 264.08)",
+          "oklch(95% 0.07215 264.08)"
+        ]
+      },
+      "primary-ink": {
+        "role": "primary",
+        "displayName": "Primary Ink",
+        "tonalRamp": [
+          "oklch(15% 0.06241 259.73)",
+          "oklch(26% 0.06241 259.73)",
+          "oklch(38% 0.06241 259.73)",
+          "oklch(49% 0.06241 259.73)",
+          "oklch(61% 0.06241 259.73)",
+          "oklch(72% 0.06241 259.73)",
+          "oklch(84% 0.06241 259.73)",
+          "oklch(95% 0.06241 259.73)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      },
+      "focus-underlay": {
+        "role": "neutral",
+        "displayName": "Focus Underlay",
+        "tonalRamp": [
+          "oklch(15% 0.01360 258.37)",
+          "oklch(26% 0.01360 258.37)",
+          "oklch(38% 0.01360 258.37)",
+          "oklch(49% 0.01360 258.37)",
+          "oklch(61% 0.01360 258.37)",
+          "oklch(72% 0.01360 258.37)",
+          "oklch(84% 0.01360 258.37)",
+          "oklch(95% 0.01360 258.37)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "Selected",
+        "tonalRamp": [
+          "oklch(15% 0.03046 261.85)",
+          "oklch(26% 0.03046 261.85)",
+          "oklch(38% 0.03046 261.85)",
+          "oklch(49% 0.03046 261.85)",
+          "oklch(61% 0.03046 261.85)",
+          "oklch(72% 0.03046 261.85)",
+          "oklch(84% 0.03046 261.85)",
+          "oklch(95% 0.03046 261.85)"
+        ]
+      },
+      "selected-border": {
+        "role": "neutral",
+        "displayName": "Selected Border",
+        "tonalRamp": [
+          "oklch(15% 0.06817 258.60)",
+          "oklch(26% 0.06817 258.60)",
+          "oklch(38% 0.06817 258.60)",
+          "oklch(49% 0.06817 258.60)",
+          "oklch(61% 0.06817 258.60)",
+          "oklch(72% 0.06817 258.60)",
+          "oklch(84% 0.06817 258.60)",
+          "oklch(95% 0.06817 258.60)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(15% 0.05084 12.65)",
+          "oklch(26% 0.05084 12.65)",
+          "oklch(38% 0.05084 12.65)",
+          "oklch(49% 0.05084 12.65)",
+          "oklch(61% 0.05084 12.65)",
+          "oklch(72% 0.05084 12.65)",
+          "oklch(84% 0.05084 12.65)",
+          "oklch(95% 0.05084 12.65)"
+        ]
+      },
+      "error-text": {
+        "role": "neutral",
+        "displayName": "Error Text",
+        "tonalRamp": [
+          "oklch(15% 0.03444 11.14)",
+          "oklch(26% 0.03444 11.14)",
+          "oklch(38% 0.03444 11.14)",
+          "oklch(49% 0.03444 11.14)",
+          "oklch(61% 0.03444 11.14)",
+          "oklch(72% 0.03444 11.14)",
+          "oklch(84% 0.03444 11.14)",
+          "oklch(95% 0.03444 11.14)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "title": {
+        "displayName": "Title",
+        "purpose": "Canvas heading."
+      },
+      "brand": {
+        "displayName": "Brand",
+        "purpose": "Application wordmark."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Panel headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Controls and scratchpad."
+      },
+      "description": {
+        "displayName": "Description",
+        "purpose": "Supporting text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Labels and compact status."
+      },
+      "key": {
+        "displayName": "Key",
+        "purpose": "Keyboard legends."
+      }
+    },
+    "shadows": [
+      {
+        "name": "board",
+        "value": "0 18px 28px #0004",
+        "purpose": "Seats the authored board."
+      },
+      {
+        "name": "cap",
+        "value": "inset 0 -3px 0 #0003, 0 3px 4px #0004",
+        "purpose": "Default sculpted keycap."
+      },
+      {
+        "name": "physical-pressed",
+        "value": "inset 0 -1px 0 #0003",
+        "purpose": "Pressed physical cap."
+      },
+      {
+        "name": "focus-underlay",
+        "value": "0 0 0 5px #12161c",
+        "purpose": "Dark underlay beneath white focus outline."
+      },
+      {
+        "name": "selected-key",
+        "value": "0 0 0 4px #12161c",
+        "purpose": "Dark underlay beneath selected key outline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "key-transition",
+        "value": "transform 70ms",
+        "purpose": "Physical press response; removed for reduced motion."
+      },
+      {
+        "name": "ripple",
+        "value": "ripple var(--duration) ease-out",
+        "purpose": "Scales .8 to 1.16 and fades; duration and strength are document values. Removed for reduced motion."
+      },
+      {
+        "name": "keyboard-scroll",
+        "value": "240px smooth",
+        "purpose": "Reach overflowed keys; instant under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-player",
+        "value": "max-width: 1099px"
+      },
+      {
+        "name": "narrow",
+        "value": "max-width: 480px"
+      },
+      {
+        "name": "wide-keys",
+        "value": "min-width: 1550px"
+      }
+    ],
+    "previewRampNote": "Tonal ramps are synthesized OKLCH preview metadata; only frontmatter colors are implemented application primitives."
+  },
+  "components": [
+    {
+      "name": "Default button",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Compact secondary action.",
+      "html": "<button class=\"ds-button\">Export design</button>",
+      "css": ".ds-button{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;background:#292e37;color:#f1f3f5;cursor:pointer}.ds-button:hover{background:#373e49}.ds-button:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}.ds-button:disabled{opacity:.5;cursor:default}"
+    },
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main player or editing action.",
+      "html": "<button class=\"ds-primary\">Play</button>",
+      "css": ".ds-primary{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;background:#b7cfff;color:#172a49;border-color:#b7cfff;font-weight:650;cursor:pointer}.ds-primary:hover{background:#b7cfff}.ds-primary:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}.ds-primary:disabled{opacity:.5;cursor:default}"
+    },
+    {
+      "name": "Inspector field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Named, editable design property.",
+      "html": "<label class=\"ds-label\">Design name<input class=\"ds-input\" value=\"Tactile mechanical\" /></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:6px;font:12px system-ui;color:var(--muted,#b4bdc9)}.ds-input{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;min-width:0;background:#292e37;color:#f1f3f5;caret-color:#b7cfff}.ds-input:hover{border-color:var(--border,#3c434e)}.ds-input:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+    },
+    {
+      "name": "Scratchpad",
+      "kind": "input",
+      "refersTo": "scratchpad",
+      "description": "A resizable typing surface.",
+      "html": "<textarea class=\"ds-scratchpad\" aria-label=\"Scratchpad\">Try your keyboard here.</textarea>",
+      "css": ".ds-scratchpad{width:100%;height:150px;resize:vertical;background:var(--surface,#20242b);color:#f1f3f5;border:1px solid var(--border,#3c434e);border-radius:8px;padding:18px;font:16px/1.6 system-ui;caret-color:#b7cfff}.ds-scratchpad:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+    },
+    {
+      "name": "Current design",
+      "kind": "nav",
+      "refersTo": "library-active",
+      "description": "Current local design in the library.",
+      "html": "<button class=\"ds-design\" aria-current=\"true\">Tactile mechanical</button>",
+      "css": ".ds-design{font:16px system-ui,sans-serif;border:1px solid var(--border,#3c434e);border-radius:6px;min-height:36px;padding:7px 10px;width:100%;text-align:left;background:#333c4c;border-color:#7f9ac3;color:#f1f3f5;font-size:13px;margin:6px 0;cursor:pointer}.ds-design:hover{background:#333c4c}.ds-design:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}"
+    },
+    {
+      "name": "Mechanical key",
+      "kind": "custom",
+      "description": "Default authored key showing physical press depth.",
+      "html": "<button class=\"ds-key\">A</button>",
+      "css": ".ds-key{position:relative;width:38px;height:43px;padding:8px 9px;border:0;border-radius:7px;text-align:left;font:11px system-ui;background:#d9d4c9;color:#292c30;box-shadow:inset 0 -3px 0 #0003,0 3px 4px #0004;transition:transform 70ms;cursor:pointer}.ds-key:hover{filter:brightness(1.06)}.ds-key:active{filter:brightness(.85);transform:translateY(2.1px);box-shadow:inset 0 -1px 0 #0003}.ds-key:focus-visible{outline:2px solid white;outline-offset:3px;box-shadow:0 0 0 5px #12161c;}@media(prefers-reduced-motion:reduce){.ds-key{transition:none}.ds-key:active{transform:none;outline:2px solid #f3bc69}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A quiet graphite workspace",
+    "overview": "The editor surrounds an expressive keyboard with subdued, functional chrome. Dense controls and explicit status text support repeated editing; the keyboard carries the color, material, and press response. This is a code-led record of the implemented system, with ordinary visual choices inferred under the user's authorization.\n\nThe editor is an Operate surface and the player is an Experience surface. Player mode removes the side inspectors and keeps the keyboard, scratchpad, and listening controls. Background images are supplied by the user; the interface uses system fonts and requires no remote UI assets.",
+    "keyCharacteristics": [
+      "Graphite chrome with restrained blue actions and readable neutral text.",
+      "Compact editing controls around a physically proportioned keyboard.",
+      "Sculpted keycaps, explicit selection, and motion that responds to input."
+    ],
+    "rules": [
+      {
+        "name": "The Authored Color Rule",
+        "body": "Keep chrome tokens separate from document-controlled keyboard, page, legend, and effect colors.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep expressive color and material on the keyboard while using quiet chrome around it.",
+      "Do preserve physical keyboard geometry and provide visible controls when it overflows.",
+      "Do retain the independent light/dark focus treatment and explicit selection text or marks.",
+      "Do honor reduced motion and show editing, save, and error states with readable text."
+    ],
+    "donts": [
+      "Don't replace editable keyboard values with fixed chrome tokens.",
+      "Don't use color alone to distinguish selected keys.",
+      "Don't add remote UI fonts or image dependencies to the existing system-font chrome."
+    ]
+  }
+}

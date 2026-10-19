@@ -1,0 +1,7 @@
+2026-10-20, Playwright Firefox 157.0, build 1555, mac-arm64.
+Downloaded with npx playwright install chromium firefox webkit.
+Launch exits before page load:
+*** You are running in headless mode.
+Could not find profile folder.
+Retries using the default macOS temp directory and TMPDIR=/tmp with one worker both failed.
+No Firefox application behavior, storage, audio, screenshot, or performance result is claimed.

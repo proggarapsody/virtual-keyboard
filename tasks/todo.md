@@ -26,7 +26,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T03 — Prove risky browser behavior and establish limits
 
-- [ ] Complete T03. Requirements: P02, P04, P10, P11, P13, P16.
+- [x] Complete T03. Requirements: P02, P04, P10, P11, P13, P16.
 - Acceptance: a disposable browser fixture proves focus/input/composition handling, user-activated overlapping audio, and transactional blob-saving failure recovery; document supported formats, media/expanded-archive limits and runtime budgets from measured fixtures; identify unavailable real-device evidence explicitly.
 - Verify: run the fixture in Chromium/Firefox/WebKit and available real Safari/touch hardware; record source/decoded sizes, decode time, chord response, cancellation, quota failure, and chosen limits in `docs/ENGINEERING-DECISIONS.md`.
 - Depends on: T02.
@@ -34,13 +34,13 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 **Checkpoint M0**
 
-- [ ] Visual execution is settled; input policy and measured limits are recorded; unsupported behavior is resolved or clearly recorded as a release blocker. Do not silently reduce the product scope.
+- [x] Visual execution is settled; input policy and measured limits are recorded; unsupported behavior is resolved or clearly recorded as a release blocker. Do not silently reduce the product scope.
 
 ## M1 — One keyboard works
 
 ### T04 — Render the first editable design document
 
-- [ ] Complete T04. Requirements: P01, P03, P05, P07.
+- [x] Complete T04. Requirements: P01, P03, P05, P07.
 - Acceptance: define the versioned schema/defaults and stable 60% positions; replace the starter screen with one real preset using ordinary document data; keep temporary/session state separate.
 - Verify: focused schema/inheritance tests plus browser render; assert key identity/geometry, invalid documents, and inherited values rather than a whole-page snapshot.
 - Depends on: T01, T02, T03.
@@ -48,7 +48,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T05 — Make Play input and mode boundaries work
 
-- [ ] Complete T05. Requirements: P02, P06, P09, P17.
+- [x] Complete T05. Requirements: P02, P06, P09, P17.
 - Acceptance: physical and virtual sources produce correct pressed state; Edit clicks select while Play activates; repeat, focus loss, cancellation, and source overlap do not leave stuck keys or duplicate activation.
 - Verify: browser keydown/up, pointer cancellation, toolbar Enter/Space, tab escape, editor-field typing, mode switching, and blur during a chord.
 - Depends on: T04.
@@ -70,7 +70,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T07 — Edit global appearance and selected-key overrides
 
-- [ ] Complete T07. Requirements: P05, P06, P07.
+- [x] Complete T07. Requirements: P05, P06, P07.
 - Acceptance: global color/font/radius/spacing controls and selected-key color/legend controls update the canvas; click/multi/group selection and mixed values are clear; resetting overrides restores property-by-property inheritance.
 - Verify: component/browser flows cover selected versus unselected keys, a global change after an override, group selection, and reset. Test custom legends as text, not HTML or output mappings.
 - Depends on: T04, T05.
@@ -78,7 +78,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T08 — Add session undo and redo
 
-- [ ] Complete T08. Requirements: P14.
+- [x] Complete T08. Requirements: P14.
 - Acceptance: document commands are undoable, drag updates coalesce, new edits clear redo; selection/typing/audition are excluded; media references can be retained by history and document switches cannot undo another design.
 - Verify: rule tests and browser keyboard shortcuts, text-field undo precedence, drag coalescing, and document-switch isolation.
 - Depends on: T07.
@@ -86,7 +86,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T09 — Autosave and restore the active design
 
-- [ ] Complete T09. Requirements: P13, P18.
+- [x] Complete T09. Requirements: P13, P18.
 - Acceptance: transactional documents/assets load after reload; serialized revision-aware saves show Saving/Saved/Unsaved accurately; failure retains the in-memory exportable snapshot and does not discard assets used by history.
 - Verify: real IndexedDB reload, rapid edits, delayed writes, unavailable storage, failed transaction, and edit-during-save. Export UI comes in T19; verify the snapshot retains all necessary bytes here.
 - Depends on: T03, T08.
@@ -94,13 +94,13 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 **Checkpoint M2**
 
-- [ ] Customize → undo/redo → save → reload reproduces the same design. Simulated failure leaves work open and visibly unsaved. Scratchpad text is absent after reload.
+- [x] Customize → undo/redo → save → reload reproduces the same design. Simulated failure leaves work open and visibly unsaved. Scratchpad text is absent after reload.
 
 ## M3 — Library and visual expression
 
 ### T10 — Manage named local designs
 
-- [ ] Complete T10. Requirements: P07, P13, P14.
+- [x] Complete T10. Requirements: P07, P13, P14.
 - Acceptance: create from preset, name/rename, duplicate, switch, and explicitly confirm deletion; preset changes create fresh designs; stale-tab/save conflicts preserve work instead of overwriting it.
 - Verify: library journey with delayed saves, shared assets, deletion cancellation, empty library, and two-tab revision conflict.
 - Depends on: T09.
@@ -108,7 +108,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T11 — Complete layout and language switching
 
-- [ ] Complete T11. Requirements: P03, P04.
+- [x] Complete T11. Requirements: P03, P04.
 - Acceptance: exact 60%/75%/full-size inventories and EN/RU maps are validated; the UI switches layout/language; hidden settings are retained and absent keys cannot activate.
 - Verify: full-size → 60% → full-size restores customized keys; switching language preserves sound/style IDs and changes typing/legends as specified; numpad/modifier behavior matches documented inventories.
 - Depends on: T06, T10.
@@ -116,7 +116,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T12 — Add background-image editing
 
-- [ ] Complete T12. Requirements: P08, P13, P14.
+- [x] Complete T12. Requirements: P08, P13, P14.
 - Acceptance: validated images support upload/replace/remove, fit/fill, position, and dimming; edits save and undo; rejected assets preserve the prior image.
 - Verify: valid/oversized/unsupported images, dimension limits, non-drag position controls, replace → undo → reload, and object-URL cleanup.
 - Depends on: T03, T08, T09.
@@ -124,7 +124,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 **Checkpoint M3**
 
-- [ ] Multiple named designs, all layouts/languages, and background media survive reload. Switching presets/sizes never silently destroys prior work.
+- [x] Multiple named designs, all layouts/languages, and background media survive reload. Switching presets/sizes never silently destroys prior work.
 
 ## M4 — Expressive playback
 
@@ -138,7 +138,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T14 — Edit sound assignments and listening controls
 
-- [ ] Complete T14. Requirements: P07, P10.
+- [x] Complete T14. Requirements: P07, P10.
 - Acceptance: global/per-key press/release assignments, volume/pitch, and explicit silence obey inheritance; preview auditions without typing or history pollution; master volume/mute remain accessible.
 - Verify: global change with one overridden key, reset, silence versus inherit, pitch/gain behavior, save/reload, and undo/redo of assignments.
 - Depends on: T07, T08, T13.
@@ -146,7 +146,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T15 — Add the three press effects
 
-- [ ] Complete T15. Requirements: P09, P17.
+- [x] Complete T15. Requirements: P09, P17.
 - Acceptance: physical press/glow/ripple use global controls and one-trigger lifecycles; reduced motion substitutes restrained feedback; editor focus remains visible through custom colors/effects.
 - Verify: chord/hold/release/cancel behavior, reduced-motion browser setting, desktop/mobile screenshots, and a trace under repeated chords.
 - Depends on: T05, T07, T11.
@@ -160,7 +160,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T16 — Upload and audition bounded audio
 
-- [ ] Complete T16. Requirements: P11, P13.
+- [x] Complete T16. Requirements: P11, P13.
 - Acceptance: supported audio is checked before reading and after decoding, stored immutably, and auditioned; limits appear before selection; decode/storage failures retain existing assignments.
 - Verify: boundary-size fixtures, invalid/unsupported formats, over-duration/memory cases, cancelled uploads, and failed saves.
 - Depends on: T03, T09, T13, T14.
@@ -168,7 +168,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T17 — Trim samples and build variation pools
 
-- [ ] Complete T17. Requirements: P10, P11, P14.
+- [x] Complete T17. Requirements: P10, P11, P14.
 - Acceptance: accessible start/end controls trim/audition samples; users assign sample pools with no immediate repeat and a safe one-sample case; media/trim/pool edits undo without missing assets.
 - Verify: known PCM fixture boundaries, invalid trim ranges, volume/pitch, deterministic no-repeat rule tests, pointer and numeric trimming, and replace/remove → undo → reload.
 - Depends on: T08, T16.
@@ -176,7 +176,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T18 — Complete the three reproducible presets
 
-- [ ] Complete T18. Requirements: P01, P07, P19.
+- [x] Complete T18. Requirements: P01, P07, P19.
 - Acceptance: mechanical, minimalist, and colorful designs use only available controls and licensed media/fonts; preset selection creates editable copies; first visit is immediately playable after audio enablement.
 - Verify: inspect/edit/save/reload each preset; reconstruct distinguishing settings in the inspector; audit asset attribution and future export rights.
 - Depends on: T10, T11, T12, T14, T15, T17.
@@ -190,7 +190,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T19 — Export a complete portable design
 
-- [ ] Complete T19. Requirements: P13, P15, P18.
+- [x] Complete T19. Requirements: P13, P15, P18.
 - Acceptance: one versioned archive includes all required built-in/uploaded media and notices; no session/text/editor data leaks into it; export works from unsaved in-memory state when IndexedDB fails.
 - Verify: archive manifest and asset-byte checks, missing-asset error, file-size bound, failed-storage export, and no hidden network fetch requirement after assets load.
 - Depends on: T09, T12, T17, T18.
@@ -198,7 +198,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T20 — Validate and import without partial writes
 
-- [ ] Complete T20. Requirements: P15.
+- [x] Complete T20. Requirements: P15.
 - Acceptance: bounded archive parsing and media validation complete before commit; normal import creates a new ID; explicitly chosen replacement is atomic and preserves its target on failure.
 - Verify: corrupted ZIP, duplicate/traversal entries, actual expanded-byte overflow, future schema, invalid values/IDs, missing/undecodable assets, storage failure, successful new import, and cancelled/failed replacement.
 - Depends on: T19.
@@ -266,3 +266,24 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 - Chromium: uploaded image + trimmed sample round trip to a clean context passes; real Web Audio instrumentation proves one scheduling per phase despite repeats (not listening evidence). Stale-tab and injected quota recovery/export tests pass.
 - WebKit input journeys pass. Audio experiment remains suspended at `AudioContext.resume()`; audible/device claims remain unavailable. Firefox launch remains unavailable. See engineering decisions.
 - Accessibility first pass found accessible-name mismatches and duplicate unnamed landmarks; both corrected. Final axe run pending.
+
+## Acceptance ledger — review candidate
+
+All 24 tasks have implementation present. Checkboxes above mean acceptance evidence at the stated scope has passed; no unavailable device evidence is counted as a pass. Authoritative report: `docs/VALIDATION.md`.
+
+| Task | Evidence/status |
+| --- | --- |
+| T01 | DESIGN.md, studio brief, token sidecar, inspected desktop/mobile/full-size captures. Finish reviewer scored scrolling, mode copy and provenance fixes resolved. |
+| T02 | Vitest/Playwright/axe commands configured; real starter smoke replaced by working keyboard load. |
+| T03 | Chromium input/audio/blob/image measurements recorded; WebKit Blob failure reproduced then fixed with byte storage; audio and Firefox runtime gaps explicitly recorded as release blockers. |
+| T04–T05 | Schema/inheritance/inventory rules; physical/virtual source overlap and cancellation; Edit/Play/button/focus journeys pass. |
+| T06 | Caret replacement, EN/RU, virtual hold, Shift/Caps, Tab and native text undo pass. **Open:** real OS IME/clipboard verification; synthetic composition events are separate evidence. |
+| T07–T12 | Appearance, mixed/group/multi selection, history, delayed/coalesced saves, reload, conflict/quota export, library/delete/duplicate, layouts, background position and media undo pass. |
+| T13 | Real Chromium scheduling/overlap/repeat/mute/pitch tests pass. **Open:** actual audible desktop/touch check, WebKit audio resume and Firefox runtime. |
+| T14–T20 | Assignment inheritance/silence, effects/reduced motion, bounded uploads/decoded totals, trim/pools, every preset reload, self-contained hashed export, bounded invalid imports and atomic replacement failure pass. |
+| T21 | Chromium/WebKit non-audible round trips and offline-after-load export pass. **Open:** Firefox and fresh-session audible playback. |
+| T22 | Responsive captures, CSS 200% reflow proxy, CDP simultaneous Shift/cancel/Caps pass. **Open:** actual touch hardware, physical portrait/landscape and browser zoom. |
+| T23 | Axe in two engines, keyboard journeys, trace and timing budgets pass. **Open:** screen reader, actual listening/touch and remaining manual accessibility checks. |
+| T24 | Isolated deployment prepared; publication/public-URL evidence is recorded in RELEASE.md. **Open:** final candidate acceptance remains blocked by T21–T23; production replacement is not authorized. |
+
+Next unfinished acceptance task is T06's real OS text-input check. Continue with the listed device/browser evidence; do not restart implementation or discovery. Milestones M1/M4/M5/M6/M7 remain unclosed where they depend on that evidence.

@@ -1,6 +1,6 @@
 # Keyboard Artist v1 — implementation plan
 
-Status: proposed technical plan, 2026-10-20. [Product scope](../docs/PRODUCT.md) is confirmed; [delivery tasks](todo.md) are unstarted. This planning change adds no runtime features or dependencies.
+Status: approved by the user and executing, 2026-10-20. [Product scope](../docs/PRODUCT.md) is confirmed; [delivery tasks](todo.md) record implementation and acceptance evidence. See docs/VALIDATION.md for current verification and release blockers.
 
 ## Approach and planning inputs
 
@@ -164,4 +164,4 @@ Run `npx -y @sveltejs/mcp svelte-autofixer <path>` on changed Svelte components.
 
 Preserve requirements, unrelated work, asset attribution, and saved data. Record evidence before proposing a scope change. Never add accounts/telemetry, transmit scratchpad text, install a service worker, or replace production implicitly.
 
-Review this proposed plan before coding. M0 settles visual tokens, exact key inventories, input policy, formats/limits, device-test availability, and runtime budgets. Record unavailable device tests as gaps. No milestone is complete merely because it is described here.
+The user approved this plan before implementation. M0 settles visual tokens, exact key inventories, input policy, formats/limits, device-test availability, and runtime budgets. Record unavailable device tests as gaps. No milestone is complete merely because it is described here.

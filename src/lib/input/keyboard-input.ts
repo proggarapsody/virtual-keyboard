@@ -11,9 +11,16 @@ export class PressLifecycle {
     this.sources.delete(source)
     return code && ![...this.sources.values()].includes(code) ? code : undefined
   }
-  get pressed() { return new Set(this.sources.values()) }
-  clear() { this.sources.clear() }
+  get pressed() {
+    return new Set(this.sources.values())
+  }
+  clear() {
+    this.sources.clear()
+  }
 }
 export function isEditorField(target: EventTarget | null) {
-  return target instanceof HTMLElement && !!target.closest('input,select,textarea,[contenteditable=true],button,a')
+  return (
+    target instanceof HTMLElement &&
+    !!target.closest('input,select,textarea,[contenteditable=true],button,a')
+  )
 }

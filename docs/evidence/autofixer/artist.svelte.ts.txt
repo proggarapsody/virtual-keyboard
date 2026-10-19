@@ -1,0 +1,10 @@
+Detected file path, reading file...
+{
+  issues: [],
+  suggestions: [
+    'Found a mutable instance of the built-in Map class. Use SvelteMap instead. at line 29, column 20',
+    'Found a mutable instance of the built-in Map class. Use SvelteMap instead. at line 30, column 18',
+    'Found a mutable instance of the built-in Map class. Use SvelteMap instead. at line 32, column 21'
+  ],
+  require_another_tool_call_after_fixing: true
+}

@@ -1,0 +1,53 @@
+{
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+  "styles": [
+    {
+      "text": "Master volume",
+      "color": "rgb(180, 189, 201)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Design name",
+      "color": "rgb(180, 189, 201)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Import design",
+      "color": "rgb(180, 189, 201)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Replace current design on\n    import",
+      "color": "rgb(180, 189, 201)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Local designTactile mechanical",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Start from presetChoose a presetTactile mechanicalQuiet minimalistColor study",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Import design",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "text": "Replace current design on\n    import",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "status": "Saved",
+  "outcomes": {
+    "blob": "null",
+    "arrayBuffer": "saved"
+  },
+  "errors": [
+    "null"
+  ]
+}
