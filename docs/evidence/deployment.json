@@ -1,0 +1,13 @@
+{
+  "preview": "https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/",
+  "applicationRevision": "761a5ea528f793a3e1ae8b6e8bd63f73cd040fcf",
+  "deploymentRevision": "a612f3ad5c7be6718245aaa9f689ec6d6418763c",
+  "originalPagesRevision": "2493189a8b43e9117a2773b19dc9caab586ed5c4",
+  "pagesStatus": "built",
+  "changedPathPrefix": "keyboard-artist-preview/",
+  "originalHtmlSha256Before": "401a8b644031ac85395b6b2bfdbf18986b76ee6c36339af07ab16f5389c440c0",
+  "originalHtmlSha256After": "401a8b644031ac85395b6b2bfdbf18986b76ee6c36339af07ab16f5389c440c0",
+  "firstPreviewDeploymentRevision": "48e7d3b34433ea1c402cc58ea58925cc2ecb02b3",
+  "changedFileCountFromOriginalBaseline": 9,
+  "latestDeploymentChangedFileCount": 4
+}

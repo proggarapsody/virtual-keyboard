@@ -4,11 +4,11 @@ Date: 2026-10-20. The approved scope is implemented through M7. This is a review
 
 ## Executed checks
 
-- `npm run test -- --run`: 11 rule/package tests pass, including schema/inheritance, Unicode cursor replacement, unique inventories, source overlap, coalesced history, no immediate sample repeat, bounded expansion, traversal/duplicate/truncated/future packages and missing media. Inverting the no-repeat rule makes its test fail; source restored. `evidence/mutation.txt` records this small mutation check, not a project-wide mutation score.
+- `npm run test -- --run`: 12 rule/package tests pass, including schema/inheritance, Unicode cursor replacement, unique inventories, source overlap, coalesced history, no immediate sample repeat, bounded expansion, traversal/duplicate/truncated/future packages and missing media. Inverting the no-repeat rule makes its test fail; source restored. `evidence/mutation.txt` records this small mutation check, not a project-wide mutation score.
 - `npm run check`: zero Svelte/TypeScript errors or warnings.
 - `npm run build`: production build passes. Approximately 70 KiB gzip JavaScript and 3.1 KiB gzip CSS; original bundled audio adds about 42 KiB. This is bundle evidence, not field performance.
-- Chromium: 30 browser tests pass. Raw run: `evidence/chromium-results.json`.
-- WebKit 27.2: 26 non-audio/device-independent browser tests pass. Four audio/performance/CDP-only cases are deliberately excluded; exclusions are not passes. Raw run: `evidence/webkit-results.json`.
+- Chromium: 31 browser tests pass. Raw run: `evidence/chromium-results.json`.
+- WebKit 27.2: 26 non-audio/device-independent browser tests pass. Five audio/performance/CDP-only cases are deliberately excluded; exclusions are not passes. Raw run: `evidence/webkit-results.json`.
 - axe: zero violations in each shipped preset editor and the mobile player in Chromium and WebKit. Reports: `evidence/axe-chromium.json`, `axe-webkit.json`. This is automated coverage, not WCAG certification or a screen-reader test.
 - Svelte autofixer executed on every component/module. Reports: `evidence/autofixer/`. Plain Maps retain imperative service state, while separate reactive snapshots drive UI. Native modal `bind:this` is intentional. The one suppressed Svelte diagnostic concerns keyboard access to a scrollable region; its focus access is necessary.
 - Impeccable detector: no mechanical findings. Finish reviewer found missing overflow guidance and incorrect Play placeholder; both scored resolved after correction. Direction provenance records the user's explicit authorization to infer ordinary choices. The reviewer shipped the scored fixes, not a claim of complete product acceptance. Token-bearing DESIGN.md and sidecar documented from source.
@@ -31,6 +31,10 @@ Date: 2026-10-20. The approved scope is implemented through M7. This is a review
 | P19 | Each preset is editable and restores after reload; global/per-key settings use the ordinary schema; asset provenance in ASSETS.md | Listening comparison on actual hardware |
 | P20 | Isolated preview deployment and original-site preservation recorded in RELEASE.md | Production promotion requires explicit approval and acceptance gaps above |
 
+## Public preview verification
+
+At the nested public URL: Chromium 29 pass / 2 development-only skips; WebKit 25 pass / 1 development-only skip with five unsupported audio/performance/CDP cases excluded. Both browsers complete settings/media round trips at the deployed base path. Reports are `evidence/preview-*-results.json`. Original-site root hash and browser behavior are preserved; exact revisions and rollback are in RELEASE.md.
+
 ## Visual and performance evidence
 
 Rendered captures are in `.impeccable/review/`, including desktop/mobile, 768/1024, full-size overflow, and WebKit captures. Keyboard controls scroll the preserved arrangement; they do not scale it into tiny touch targets. A 720px CSS viewport approximates layout reflow at 200% zoom on 1440px; it does not substitute for actual browser zoom or accessibility zoom.
@@ -48,3 +52,5 @@ Rendered captures are in `.impeccable/review/`, including desktop/mobile, 768/10
 ## Resume point
 
 Implementation is present for all 24 tasks. Continue with unchecked acceptance items in `tasks/todo.md`: real audio/device/assistive-technology checks, Firefox environment verification, and the complete three-engine audible round trip. Do not restart discovery or silently mark these unavailable checks passed.
+
+Final published Chromium lab run: p95 scheduling 0.70 ms; p95 next-frame observation 16.80 ms. Three fresh-context FCP observations: 116, 124, 120 ms (unthrottled automation; not field data).

@@ -6,7 +6,7 @@ The v1 review candidate includes three editable presets, ANSI 60%/75%/full-size 
 
 ## Review and release
 
-Preview: publication in progress; the final URL/revision are recorded in [release notes](docs/RELEASE.md).
+[Open the review preview](https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/). Exact revisions and preservation checks are in [release notes](docs/RELEASE.md).
 
 The original [public keyboard](https://proggarapsody.github.io/virtual-keyboard/) remains separate. Replacing it requires explicit user approval. This candidate is **not fully release-verified**: physical listening/touch, screen-reader checks, Firefox and WebKit audio coverage remain open. See [validation](docs/VALIDATION.md) for exact evidence and limitations.
 
@@ -22,7 +22,7 @@ npm run test -- --run
 npm run check
 npm run build
 npm run test:e2e -- --project=chromium
-npm run test:e2e -- --project=webkit --grep-invert 'user activated audio|real Web Audio|records cold|simulated simultaneous'
+npm run test:e2e -- --project=webkit --grep-invert 'user activated audio|real Web Audio|records cold|simulated simultaneous|inherited sample pools'
 npm run test:e2e -- --project=firefox
 ```
 

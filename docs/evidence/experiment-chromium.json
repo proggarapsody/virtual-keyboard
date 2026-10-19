@@ -5,19 +5,19 @@
       "seconds": 1,
       "encoded": 176444,
       "decoded": 384000,
-      "decodeMs": 35.099999994039536
+      "decodeMs": 28.400000005960464
     },
     {
       "seconds": 10,
       "encoded": 1764044,
       "decoded": 3840000,
-      "decodeMs": 11
+      "decodeMs": 9.5
     },
     {
       "seconds": 30,
       "encoded": 5292044,
       "decoded": 11520000,
-      "decodeMs": 32.30000001192093
+      "decodeMs": 27.30000001192093
     }
   ],
   "formats": {
@@ -29,10 +29,10 @@
     "height": 4096,
     "encoded": 332226,
     "decoded": 67108864,
-    "decodeMs": 17.099999994039536
+    "decodeMs": 15.5
   },
-  "chordMs": 0.19999998807907104,
-  "storageMs": 5.5999999940395355,
+  "chordMs": 0.7000000178813934,
+  "storageMs": 7.0999999940395355,
   "aborted": true,
   "retained": true,
   "malformedRejected": true,

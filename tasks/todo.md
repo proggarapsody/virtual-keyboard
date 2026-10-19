@@ -236,7 +236,7 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 
 ### T24 — Publish an isolated review preview
 
-- [ ] Complete T24. Requirements: P20.
+- [x] Complete T24. Requirements: P20.
 - Acceptance: inspect actual hosting/workflow state and publish a preview without replacing the original; verify base-path assets/downloads and the complete journey at its URL; document production promotion/rollback and wait for explicit approval before replacement.
 - Verify: production build, full accumulated tests, preview smoke/journey, original URL still functioning, and recorded build revision plus limitations.
 - Depends on: T23.
@@ -284,6 +284,12 @@ All 24 tasks have implementation present. Checkboxes above mean acceptance evide
 | T21 | Chromium/WebKit non-audible round trips and offline-after-load export pass. **Open:** Firefox and fresh-session audible playback. |
 | T22 | Responsive captures, CSS 200% reflow proxy, CDP simultaneous Shift/cancel/Caps pass. **Open:** actual touch hardware, physical portrait/landscape and browser zoom. |
 | T23 | Axe in two engines, keyboard journeys, trace and timing budgets pass. **Open:** screen reader, actual listening/touch and remaining manual accessibility checks. |
-| T24 | Isolated deployment prepared; publication/public-URL evidence is recorded in RELEASE.md. **Open:** final candidate acceptance remains blocked by T21–T23; production replacement is not authorized. |
+| T24 | Published isolated preview at `/virtual-keyboard/keyboard-artist-preview/`, application `761a5ea`, deployment `a612f3a`. Public Chromium 29 pass/2 development-only skips; WebKit 25 pass/1 development-only skip (five unsupported cases excluded). Original root hash/browser load preserved. RELEASE.md records promotion/rollback. This closes preview publication only; T21–T23 continue to block production sign-off. |
 
 Next unfinished acceptance task is T06's real OS text-input check. Continue with the listed device/browser evidence; do not restart implementation or discovery. Milestones M1/M4/M5/M6/M7 remain unclosed where they depend on that evidence.
+
+### Published review checkpoint
+
+Preview: https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/.
+
+19 of 24 task acceptance boxes are closed. T06/T13/T21/T22/T23 remain open for the unavailable real OS input, audible playback, Firefox, physical touch and assistive-technology evidence listed above. All planned implementation slices have been exercised; no scope interview or production replacement is pending/authorized. T24’s isolated review publication is complete despite the remaining production acceptance gates.

@@ -12,6 +12,11 @@ test('records cold navigations and warm chord timing as lab evidence', async ({
     const page = await context.newPage()
     await page.goto('./')
     await expect(page.getByRole('status')).toHaveText('Saved')
+    await page.waitForFunction(() =>
+      performance
+        .getEntriesByType('paint')
+        .some((entry) => entry.name === 'first-contentful-paint'),
+    )
     cold.push(
       await page.evaluate(() => ({
         navigation: performance.getEntriesByType('navigation')[0]?.toJSON(),
