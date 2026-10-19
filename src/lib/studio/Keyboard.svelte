@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Studio } from './session.svelte'
-  import { layoutRows } from '../design/layouts'
+  import { layoutRows, fullPosition } from '../design/layouts'
   import { resolveStyle } from '../design/model'
   import { output } from '../design/languages'
   let { studio, typeKey }: { studio: Studio; typeKey: (code: string) => void } = $props()
@@ -21,19 +21,21 @@
 </script>
 <!-- svelte-ignore a11y_no_noninteractive_tabindex (Scrollable keyboard viewport requires keyboard access.) -->
 <div class="keyboard-scroll" tabindex="0" role="region" aria-label="Keyboard canvas. Scroll horizontally for larger layouts">
-  <div class="board" style:background={a.board} style:--gap={`${a.gap}px`} style:--radius={`${a.radius}px`} style:font-family={fonts[a.font]} style:--accent={a.accent} style:--duration={`${studio.design.effect.duration}ms`} style:--strength={studio.design.effect.strength}>
+  <div class={["board", { "full-board": studio.design.layout === 'full' }]} style:background={a.board} style:--gap={`${a.gap}px`} style:--radius={`${a.radius}px`} style:font-family={fonts[a.font]} style:--accent={a.accent} style:--duration={`${studio.design.effect.duration}ms`} style:--strength={studio.design.effect.strength}>
     {#each rows as row, i (i)}
       <div class="key-row">
         {#each row as key (key.code)}
           {@const style = resolveStyle(studio.design, key.code)}
+          {@const position = fullPosition(key.code)}
+          {@const legend = style.legend ?? (output(key.code, studio.design.language, studio.shift, studio.caps).trim() || key.label)}
           <button class={['key', studio.design.effect.type, { pressed: studio.pressed.includes(key.code), selected: studio.selection.includes(key.code) && studio.mode === 'edit' }]}
-            data-code={key.code} aria-label={`${key.code}${studio.mode === 'edit' ? ' select' : ''}`} aria-pressed={studio.mode === 'edit' ? studio.selection.includes(key.code) : studio.pressed.includes(key.code)}
-            style:--units={key.width} style:background={style.cap} style:color={style.ink}
+            data-code={key.code} aria-label={`${legend} (${key.code})${studio.mode === 'edit' ? ' select' : ''}`} aria-pressed={studio.mode === 'edit' ? studio.selection.includes(key.code) : studio.pressed.includes(key.code)}
+            style:--x={position.x} style:--y={position.y} style:--height={position.height} style:--units={key.width} style:background={style.cap} style:color={style.ink}
             onclick={(e) => { if (studio.mode === 'edit') studio.select(key.code, e.shiftKey); else if (e.detail === 0) { studio.down(`assist:${key.code}`, key.code); typeKey(key.code); studio.up(`assist:${key.code}`) } }}
             onpointerdown={(e) => start(e, key.code)} onpointerup={(e) => stop(e.pointerId)} onpointercancel={(e) => stop(e.pointerId)} onlostpointercapture={(e) => stop(e.pointerId)}
             onkeydown={(e) => { if (studio.mode === 'play' && ['Enter', ' '].includes(e.key)) { e.preventDefault(); studio.down(`button:${key.code}`, key.code); typeKey(key.code) } }}
             onkeyup={(e) => { if (['Enter', ' '].includes(e.key)) { e.preventDefault(); studio.up(`button:${key.code}`) } }} onblur={() => studio.up(`button:${key.code}`)}>
-            <span>{style.legend ?? (output(key.code, studio.design.language, studio.shift, studio.caps).trim() || key.label)}</span>
+            <span>{legend}</span>
             {#if studio.mode === 'edit' && studio.selection.includes(key.code)}<span class="selection-mark" aria-hidden="true">✓</span>{/if}
             {#if key.code === 'CapsLock' && studio.caps}<span class="caps-mark">On</span>{/if}
           </button>

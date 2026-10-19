@@ -10,13 +10,23 @@ function wav(seconds: number, channels = 2) {
 }
 document.querySelector('button')!.onclick = async () => {
   const context = new AudioContext()
-  await context.resume()
+  document.querySelector('pre')!.textContent = JSON.stringify({ stage: 'audio-resume', state: context.state })
+  await context.resume().catch(error => { document.querySelector('pre')!.textContent = JSON.stringify({ stage: 'audio-resume-failed', error: String(error) }); throw error })
   const measurements = []
   for (const seconds of [1, 10, 30]) {
     const bytes = wav(seconds), start = performance.now()
     const buffer = await context.decodeAudioData(bytes.slice(0))
     measurements.push({ seconds, encoded: bytes.byteLength, decoded: buffer.length * buffer.numberOfChannels * 4, decodeMs: performance.now() - start })
   }
+  const formats: Record<string, boolean> = {}
+  for (const format of ['mp3', 'ogg']) {
+    try { await context.decodeAudioData(await (await fetch(`./sample.${format}`)).arrayBuffer()); formats[format] = true } catch { formats[format] = false }
+  }
+  const canvas = document.createElement('canvas'); canvas.width = canvas.height = 4096
+  const imageBlob = await new Promise<Blob>(resolve => canvas.toBlob(b => resolve(b!), 'image/png'))
+  const imageStart = performance.now()
+  const bitmap = await createImageBitmap(imageBlob)
+  const image = { width: bitmap.width, height: bitmap.height, encoded: imageBlob.size, decoded: bitmap.width * bitmap.height * 4, decodeMs: performance.now() - imageStart }; bitmap.close()
   const buffer = await context.decodeAudioData(wav(1))
   const chord = performance.now()
   for (let i = 0; i < 32; i++) { const s = context.createBufferSource(); s.buffer = buffer; s.connect(context.destination); s.start() }
@@ -40,7 +50,7 @@ document.querySelector('button')!.onclick = async () => {
   })
   let malformedRejected = false
   try { await context.decodeAudioData(new Uint8Array([1, 2, 3]).buffer) } catch { malformedRejected = true }
-  document.querySelector('pre')!.textContent = JSON.stringify({ browser: navigator.userAgent, measurements, chordMs, storageMs, aborted, retained, malformedRejected, audioState: context.state })
+  document.querySelector('pre')!.textContent = JSON.stringify({ browser: navigator.userAgent, measurements, formats, image, chordMs, storageMs, aborted, retained, malformedRejected, audioState: context.state })
   await context.close(); db.close()
 }
 export {}

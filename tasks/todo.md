@@ -258,3 +258,11 @@ For code/config tasks, verification includes `npm run check` and `npm run build`
 - T04–T06 implemented: validated schema, stable physical IDs, EN/RU maps, Edit/Play source lifecycle, temporary caret-aware scratchpad. Six rule tests and Chromium input journeys pass. Native `execCommand` insertion is retained specifically to preserve browser text undo; paste/composition remain native. Cross-browser/device acceptance remains pending.
 - T07–T11 implemented: property inheritance, group/multi selection, decorative legends, coalesced history, transactional revision-aware saves, fresh presets/duplicates, confirmed deletion, retained hidden-key overrides. Chromium appearance/library/reload journeys pass. Conflict/failure and full inventory journeys remain to verify.
 - `npm run check` reports zero errors/warnings; production build passes. No task with outstanding acceptance evidence is marked complete.
+
+### Media and portability increment
+
+- T12–T20 implemented: bounded PNG/JPEG backgrounds; one user-enabled, bounded Web Audio engine; separate press/release assignment inheritance, silence, master mute/volume, original bundled samples, three effects/presets, uploads and trim/pool editing.
+- Versioned ZIP exports include media SHA-256 hashes and notices; bounded streaming import validates paths, duplicates, expanded bytes, schema, media and trim before atomic save. Imported asset IDs are renewed to prevent overwriting another design or history. New/replacement imports preserve current work on rejection.
+- Chromium: uploaded image + trimmed sample round trip to a clean context passes; real Web Audio instrumentation proves one scheduling per phase despite repeats (not listening evidence). Stale-tab and injected quota recovery/export tests pass.
+- WebKit input journeys pass. Audio experiment remains suspended at `AudioContext.resume()`; audible/device claims remain unavailable. Firefox launch remains unavailable. See engineering decisions.
+- Accessibility first pass found accessible-name mismatches and duplicate unnamed landmarks; both corrected. Final axe run pending.

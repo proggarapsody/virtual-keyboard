@@ -20,6 +20,7 @@ export class Repository {
   async save(design: Design, assets: Asset[], expected?: number) {
     const db = await this.db()
     const tx = db.transaction(['designs', 'assets'], 'readwrite')
+    void tx.done.catch(() => {})
     const existing = await tx.objectStore('designs').get(design.id)
     if (existing && existing.revision !== expected) { tx.abort(); await tx.done.catch(() => {}); throw new Error('This design changed in another tab. Duplicate or export your work to preserve both versions.') }
     if (!existing && expected !== undefined) { tx.abort(); await tx.done.catch(() => {}); throw new Error('This design was deleted in another tab. Duplicate or export your work.') }
