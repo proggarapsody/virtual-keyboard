@@ -1,6 +1,6 @@
 # Project instructions
 
-Read README.md and docs/PRODUCT.md before changing product behavior. Product discovery is still open: finish the grilling interview and obtain confirmation of shared understanding before implementing the keyboard studio. The initial repository, skills, and Svelte setup are authorized separately.
+Read README.md and docs/PRODUCT.md before changing product behavior. The user confirmed the v1 scope on 2026-10-20; discovery is complete. The proposed implementation plan is in tasks/plan.md and delivery tasks are in tasks/todo.md. Do not reopen settled scope questions. Follow the reviewed plan when implementation is requested, and bring evidence before proposing a scope change.
 
 ## Skills
 

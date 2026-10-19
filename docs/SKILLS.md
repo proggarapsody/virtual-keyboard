@@ -22,7 +22,7 @@ Addy engineering's three shared checklists are vendored in `.agents/references/`
 
 Impeccable includes its launcher and reference files. Its launcher may download a platform runtime on first use. No automated hooks were installed. Svelte code writer invokes `@sveltejs/mcp` through `npx`, which can require network access.
 
-Use one agreed visual direction across Impeccable and frontend-design. These skills guide implementation; they do not settle open product decisions. The existing global grilling skill remains the interview workflow.
+Use one agreed visual direction across Impeccable and frontend-design. These skills guide implementation against the confirmed scope in `PRODUCT.md` and the proposed plan in `../tasks/plan.md`. The grilling interview is complete; use it again only for a material scope change.
 
 ## Updating
 
