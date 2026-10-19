@@ -13,7 +13,7 @@ git worktree add --detach "$preview_checkout" origin/gh-pages
 cleanup() { git worktree remove --force "$preview_checkout"; }
 trap cleanup EXIT
 mkdir -p "$preview_checkout/$preview_path"
-rsync -a --delete dist/ "$preview_checkout/$preview_path/"
+rsync -ac --delete dist/ "$preview_checkout/$preview_path/"
 git -C "$preview_checkout" add -- "$preview_path"
 if git -C "$preview_checkout" diff --cached --name-only | rg -v '^keyboard-artist-preview/'; then
   echo 'Refusing to publish changes outside the preview directory.' >&2

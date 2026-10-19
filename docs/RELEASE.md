@@ -1,5 +1,11 @@
 # Isolated review preview
 
+## Reference-led redesign (2026-10-20)
+
+Application revision: `1b83b2f`. Scoped Pages deployment: `2158064`. Review URL remains https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/. Live design-system page: https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/design-system.html. This update replaces review chrome only; original root site remains protected by the scoped publish script. Final public checks are recorded below after deployment.
+
+## Earlier v1 preview checkpoint
+
 Published preview: [https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/](https://proggarapsody.github.io/virtual-keyboard/keyboard-artist-preview/).
 
 Application revision: `761a5ea528f793a3e1ae8b6e8bd63f73cd040fcf`. Pages deployment commit: `a612f3ad5c7be6718245aaa9f689ec6d6418763c`; original baseline Pages revision: `2493189a8b43e9117a2773b19dc9caab586ed5c4`. GitHub Pages reports `built` with no build error. The preview’s `build.json` returns the application revision above.
@@ -31,3 +37,7 @@ Preview rollback: revert the latest scoped deployment commit to restore the prev
 The preview is available for review. It is not a production-promotion sign-off: the unchecked audio/device/assistive-technology/browser gates in VALIDATION.md still apply.
 
 The final preview update fixes shared variation history for inherited sample pools. Its deterministic real-buffer regression check passes across different keys. First scoped publication was `48e7d3b`; the final update is `a612f3a`. Both preserve every original root file.
+
+### Publication copy fix
+
+The first redesign deployment exposed rsync's size/mtime quick-check: the checked-out old `build.json` and freshly generated marker had the same size and timestamp second, so the marker was skipped. Publishing now uses `rsync -ac --delete` to compare file contents. A disposable same-size/same-timestamp old/new fixture verifies replacement. The first redesign Pages commit `2158064` is superseded by the checksum-verified publication below.
